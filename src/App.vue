@@ -9,6 +9,9 @@ import SvgGlobalDefs from '@/components/SvgGlobalDefs.vue'
 import LoginStatus from '@/components/LoginPage/LoginStatus.vue'
 import { useSoundtrack } from '@/mixins/soundtrack'
 import { defineComponent } from 'vue'
+import { useWindowEvent } from '@/mixins/event'
+import { storeNamespace } from '@/store'
+import { PROGRESS_STORAGE_KEY } from '@/store/localProgress'
 
 export default defineComponent({
   components: {
@@ -17,6 +20,10 @@ export default defineComponent({
   },
   setup() {
     useSoundtrack()
+    const syncCompletedLevels = storeNamespace('game').useMutation('SYNC_COMPLETED_LEVELS')
+    useWindowEvent('storage', (event) => {
+      if (event.key === PROGRESS_STORAGE_KEY || event.key === null) syncCompletedLevels()
+    })
   },
 })
 </script>

@@ -164,6 +164,7 @@ export default defineComponent({
     const router = useRouter()
     const game = storeNamespace('game')
     const writeCurrentLevelId = game.useMutation('SET_CURRENT_LEVEL_ID')
+    const completeLevel = game.useMutation('COMPLETE_LEVEL')
 
     const scaledTileSize = ref(64)
     const menuCoord = ref<Coord | null>(null)
@@ -333,6 +334,14 @@ export default defineComponent({
         visCtl.isExperiment &&
         experimentCtl.fadeProgress === 1
       )
+    })
+
+    watch(showVictoryOverlay, (visible) => {
+      const id = props.levelId
+      // Record the same victory the player sees, and never a stale level during navigation.
+      if (visible && id.kind === LevelKind.Campaign && gameCtl.level?.id === id.index) {
+        completeLevel(id.index)
+      }
     })
 
     const isVictory = computed(() => !isLab.value && goalsCtl.gameOutcome === GameOutcome.Victory)
