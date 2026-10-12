@@ -6,7 +6,7 @@
       <a href="https://github.com/Quantum-Game/quantum-game-2" target="_blank" rel="noopener">
         Quantum Game 2
       </a>
-      の日本語化版です。日本語化・改変は Mitarai Lab が行っています。
+      の日本語化版です。
     </p>
     <p>
       原作者は Piotr Migdał、Klem Jankiewicz ほか、Quantum Flytrap の開発チームです。

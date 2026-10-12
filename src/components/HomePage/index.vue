@@ -29,7 +29,7 @@
         </template>
         <template v-else>{{ commitDate }}時点。</template>
         <br />
-        PCのブラウザでの操作を推奨します。日本語版の開発：Mitarai Lab。
+        PCのブラウザでの操作を推奨します。
       </p>
     </div>
     <HomepageCredits />
