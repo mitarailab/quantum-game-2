@@ -70,7 +70,9 @@ export default defineComponent({
     })
 
     watchEffect(() => {
-      if (!entry.value?.title) {
+      // Leaving the article clears the entry parameter before this component unmounts.
+      // Only redirect when the destination actually specifies an unknown article.
+      if (entryURL.value && !entry.value?.title) {
         router.push({ name: '404' })
       }
     })
