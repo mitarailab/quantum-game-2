@@ -22,6 +22,8 @@
   "TAKE ME BACK!": "ホームに戻る",
   "OH NO :(": "ページが見つかりません",
   "photon state": "光子の状態",
+  "Photon state (formula)": "光子の状態（数式）",
+  "There are no photons on the board at this step.": "この時点では盤面上に光子はありません。",
   "HINT": "操作のヒント",
   "LEARN MORE": "部品の動きを見る",
   "Hover on a element for more information.": "部品にカーソルを合わせると、機能を確認できます。",
