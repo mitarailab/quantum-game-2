@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-10-12",
+  "scope": "CC BY declaration provenance and targeted comparison of two articles; not an exhaustive textual provenance audit.",
+  "declaration_added_by": "Piotr Migdal",
+  "declaration_commit": "0836d7338596ba6e7bde049ef9ae848a0ec3585e",
+  "latest_checked_commit": "2e69c8e73c59bb4215dc3d28c2f9902dea96c952",
+  "license_family_declared": "CC BY",
+  "license_version": null,
+  "license_url_in_declaration": null,
+  "published_readme": "https://quantum-game.github.io/qg-encyclopedia/",
+  "text_comparisons": [
+    {
+      "encyclopedia_path": "key-concepts/superposition.md",
+      "wikipedia_title": "Quantum superposition",
+      "wikipedia_revision": 948469988,
+      "source": "https://en.wikipedia.org/w/index.php?title=Quantum%20superposition&oldid=948469988",
+      "finding": "Closely matching wording with local edits; source relationship and applicable license require clarification.",
+      "differences_observed": [
+        "Encyclopedia omits the words referring to fields in the Wikipedia sentence.",
+        "Encyclopedia adds a game-specific explanation."
+      ]
+    },
+    {
+      "encyclopedia_path": "key-concepts/interference.md",
+      "wikipedia_title": "Wave interference",
+      "wikipedia_revision": 945011693,
+      "source": "https://en.wikipedia.org/w/index.php?title=Wave%20interference&oldid=945011693",
+      "finding": "Closely matching wording with local edits; source relationship and applicable license require clarification.",
+      "differences_observed": [
+        "Encyclopedia truncates the Wikipedia list of wave types."
+      ]
+    }
+  ]
+}

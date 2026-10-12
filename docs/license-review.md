@@ -18,6 +18,38 @@
 
 CC BYの条件は版番号によって詳細が異なります。[CC BY 4.0の説明](https://creativecommons.org/licenses/by/4.0/) は参考であり、百科事典の版番号を示す根拠ではありません。
 
+## 百科事典のCC BY追加確認
+
+文章についてCC BYの宣言があることは確認できました。Piotr Migdalが2020年3月29日の
+[コミット](https://github.com/Quantum-Game/qg-encyclopedia/commit/0836d7338596ba6e7bde049ef9ae848a0ec3585e)
+でREADMEに追加しています。ゲームが参照する版と、最新版
+`2e69c8e73c59bb4215dc3d28c2f9902dea96c952` のREADMEに同じ宣言があり、
+[百科事典の公開README](https://quantum-game.github.io/qg-encyclopedia/) にも掲載されています。
+著作者としてChiara Decaroli、Piotr Migdał、他の貢献者が挙げられています。
+
+READMEの履歴、最新ファイル一覧、公開PR、公開READMEを調べましたが、
+CC BYの版番号・ライセンスURL・独立したLICENSEファイルは確認できませんでした。
+GitHub APIのlicense欄もnullです。これは宣言が存在しないという意味ではなく、版番号の根拠には使えないということです。
+かつての `https://quantumgame.io/info` は調査時には404でした。
+[確認結果と出典](licenses/encyclopedia-provenance.json) に記録しています。
+
+加えて、次の2記事は2020年当時のWikipedia本文との近似が見つかりました。
+原著者の意図や具体的な引用元の断定ではありませんが、CC BYだけで処理してよいか確認が必要です。
+
+| 記事 | 確認した出典と履歴 | 公開前の対応 |
+| --- | --- | --- |
+| `key-concepts/superposition.md` | [Wikipediaの2020年4月1日版](https://en.wikipedia.org/w/index.php?title=Quantum_superposition&oldid=948469988) の説明と近似。語句の削除とゲーム説明の追加がある。[作成コミット](https://github.com/Quantum-Game/qg-encyclopedia/commit/94e595e4a7769b6e03d82ad7c50b5035354e3823) には書き直しが必要との注記 | 元文章の出典・許諾条件を確認するか、研究室で独自に説明を執筆する |
+| `key-concepts/interference.md` | [Wikipediaの2020年3月11日版](https://en.wikipedia.org/w/index.php?title=Wave_interference&oldid=945011693) の説明と近似。波の例示が短縮されている。[作成コミット](https://github.com/Quantum-Game/qg-encyclopedia/commit/c986f6f801d1ad6279d48f2ea747d4196363be7e) に書き直しが必要との注記 | 同上。単なる日本語訳で出典の条件がなくなるとは扱わない |
+
+Wikipediaの文章を翻訳・改変して使う場合は、その文章の適用ライセンスと帰属・継承条件に従います。
+[Wikimediaの再利用条件](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use#7._Licensing_of_Content) を参照してください。
+現在の規約が示すCC BY-SA 4.0を、2020年の採用元の条件として無条件に断定しません。
+百科事典全体のCC BY宣言が、第三者由来の文章の条件を置き換えるとは判断しません。
+
+版番号を明確にするには、権利者へ使用版の文章がどのCC BY版で提供されるか確認する必要があります。
+同時に、この2記事の出典と、Wikipedia由来の場合の帰属・継承条件も確認対象にします。
+外部への問い合わせ・Issue投稿は行っていません。
+
 ## 画像
 
 生成済み百科事典JSONで使用される画像URLは11件です。
@@ -78,7 +110,7 @@ Montserratは `public/index.html` でGoogle Fontsを外部読み込みしてい�
 - [x] Organizationの独立フォークを作成し、開発用originを切り替える。
 - [x] 本体MITの原文を保持し、公開用ディレクトリにも全文を追加する。
 - [x] 文章・画像・音楽・フォント・直接依存の初期調査と出典を記録する。
-- [ ] 百科事典のCC BY版番号を確定するか、未確定の文章を公開対象から外す。
+- [ ] 百科事典のCC BY版番号を確定するか、未確定の文章を公開対象から外す。重ね合わせ・干渉の記事は第三者由来の条件を確認するか、独自執筆へ置き換える。
 - [ ] 未解決の写真・図・推薦文・転載コードについて、許諾条件を確定するか、置き換え・除外を完了する。
 - [ ] 日本語版の運営主体、原著作者、翻訳や改変の事実を表示し、クレジット画面を実装する。
 - [ ] 推移的依存を含む配布物の全通知を作成する。

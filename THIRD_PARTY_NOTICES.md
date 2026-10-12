@@ -11,6 +11,8 @@ Copyright (c) 2019 Piotr Migdał。MITライセンス全文は [LICENSE](LICENSE
 [Quantum Game Encyclopedia](https://github.com/Quantum-Game/qg-encyclopedia) の文章は、
 Chiara Decaroli、Piotr Migdał および他の貢献者によるCC BY作品です。
 上流READMEに版番号・ライセンスURLがないため、版番号は確認中です。CC BY 4.0と断定しません。
+宣言は原著者によるREADME追加コミットと公開READMEでも確認しました。
+ただし、重ね合わせ・干渉の記事にWikipediaの過去版と近似する説明があり、第三者由来の条件は別途確認が必要です。
 `src/assets/data/encyclopedia/elements.json` と `concepts.json` の文章にもこの出典を適用します。
 翻訳時には、原著者・原文の出典・確認したライセンスURL・研究室による翻訳や編集の事実を公開画面に表示します。
 画像は文章とは別の条件です。画像ごとの調査結果は [ライセンス調査](docs/license-review.md) にあります。
