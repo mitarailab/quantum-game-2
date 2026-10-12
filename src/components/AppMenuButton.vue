@@ -13,23 +13,23 @@
     <div layout="row u5" :class="{ alt: $flags.altMenu }">
       <router-link to="/" class="nav-icon" exact>
         <div><IconHome /></div>
-        <span>HOME</span>
+        <span>{{ $gameText('HOME') }}</span>
       </router-link>
-      <router-link v-if="currentLevel != null" :to="`/level/${currentLevel}`" class="nav-icon">
+      <router-link v-if="currentLevel != null" :to="campaignLink(currentLevel)" class="nav-icon">
         <div><IconGame /></div>
-        <span>GAME</span>
+        <span>{{ $gameText('GAME') }}</span>
       </router-link>
       <router-link to="/levels" class="nav-icon">
         <div><IconLevels /></div>
-        <span>LEVELS</span>
+        <span>{{ $gameText('LEVELS') }}</span>
       </router-link>
-      <router-link to="/sandbox" class="nav-icon">
+      <router-link to="/lab" class="nav-icon">
         <div><IconLab /></div>
-        <span>LAB</span>
+        <span>{{ $gameText('LAB') }}</span>
       </router-link>
       <router-link to="/info" class="nav-icon">
         <div><IconEncyclopedia /></div>
-        <span>LEARN</span>
+        <span>{{ $gameText('LEARN') }}</span>
       </router-link>
     </div>
   </nav>
@@ -38,6 +38,7 @@
 
 <script lang="ts">
 import { storeNamespace } from '@/store'
+import { campaignLink } from '@/assets/data/levels'
 import { computed, defineComponent, ref, watch } from 'vue'
 
 import IconHome from '@/assets/graphics/icons/menu_home.svg?inline'
@@ -90,6 +91,7 @@ export default defineComponent({
       toggleMenu,
       appMenuOpened,
       currentLevel,
+      campaignLink,
     }
   },
 })

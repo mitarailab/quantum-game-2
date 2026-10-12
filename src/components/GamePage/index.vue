@@ -2,9 +2,9 @@
   <div class="game">
     <!-- OVERLAY -->
     <AppOverlay :victory="showVictoryOverlay" class="overlay" @bgClick="continueAfterWin">
-      <p class="backButton" tabindex="0" @click="continueAfterWin">GO BACK</p>
+      <p class="backButton" tabindex="0" @click="continueAfterWin">{{ $gameText('GO BACK') }}</p>
       <router-link v-if="nextLevelOrOvelay" :to="nextLevelOrOvelay">
-        <AppButton :overlay="true" :inline="false">NEXT LEVEL</AppButton>
+        <AppButton :overlay="true" :inline="false">{{ $gameText('NEXT LEVEL') }}</AppButton>
       </router-link>
     </AppOverlay>
 
@@ -13,11 +13,19 @@
       <template #header>
         <div layout="row u2 middle center">
           <router-link v-if="previousLevel != null" :to="previousLevel">
-            <img src="@/assets/graphics/icons/previousLevel.svg" alt="Previous Level" width="24" />
+            <img
+              src="@/assets/graphics/icons/previousLevel.svg"
+              :alt="$gameText('Previous Level')"
+              width="24"
+            />
           </router-link>
           <h1 class="title">{{ title }}</h1>
           <router-link v-if="nextLevelOrOvelay != null" :to="nextLevelOrOvelay">
-            <img src="@/assets/graphics/icons/nextLevel.svg" alt="Next Level" width="24" />
+            <img
+              src="@/assets/graphics/icons/nextLevel.svg"
+              :alt="$gameText('Next Level')"
+              width="24"
+            />
           </router-link>
         </div>
       </template>
@@ -104,9 +112,10 @@
 </template>
 
 <script lang="ts">
+import { gameText } from '@/i18n/game'
 import { IInfoPayload } from '@/mixins/gameInterfaces'
 import { campaignLevel, campaignLink, LevelId, LevelKind, sandboxLevel } from '@/assets/data/levels'
-import { KetViewer } from 'bra-ket-vue'
+import { KetViewer } from '@/components/QuantumStateViews'
 import GameInfobox from '@/components/GamePage/GameInfobox.vue'
 import GameToolbox from '@/components/GamePage/GameToolbox.vue'
 import GameControls from '@/components/GamePage/GameControls.vue'
@@ -256,7 +265,7 @@ export default defineComponent({
     const infoPayload = ref({
       kind: 'ui',
       particles: [],
-      text: 'Hover on a element for more information.',
+      text: gameText('Hover on a element for more information.'),
     } as IInfoPayload)
 
     watch(() => props.levelId, reload, { immediate: true })
@@ -402,21 +411,21 @@ export default defineComponent({
       const levelId = props.levelId
       switch (levelId.kind) {
         case LevelKind.Lab:
-          return 'Virtual Lab'
+          return gameText('Virtual Lab')
         case LevelKind.Campaign:
           if (gameCtl.level != null) {
-            return `${gameCtl.level.id} - ${gameCtl.level.name}`
+            return `${gameCtl.level.id} - ${gameText(gameCtl.level.name)}`
           }
           break
         case LevelKind.User:
           // TODO
           break
       }
-      if (props.levelId.kind === LevelKind.Campaign) if (isLab.value) return 'Virtual Lab'
+      if (props.levelId.kind === LevelKind.Campaign) if (isLab.value) return gameText('Virtual Lab')
       if (props.levelId.kind === LevelKind.Campaign)
         if (gameCtl.level) {
         }
-      return 'Loading...'
+      return gameText('Loading...')
     })
 
     return {

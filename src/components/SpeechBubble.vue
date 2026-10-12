@@ -7,7 +7,7 @@
       :style="positionStyle"
       @click="shouldHide"
     >
-      <span>{{ hint.content }}</span>
+      <span>{{ $gameText(hint.content) }}</span>
       <div v-if="closeable" class="close">x</div>
     </div>
   </transition>

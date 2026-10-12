@@ -1,7 +1,7 @@
 <template>
   <div v-if="shown" class="login-status">
     <router-link v-if="!loggedIn" to="/login" class="login-style">
-      <p>LOG IN</p>
+      <p>{{ $gameText('LOG IN') }}</p>
     </router-link>
     <router-link v-else to="/myaccount" class="login-style"
       ><p>Playing as {{ userName }}</p>

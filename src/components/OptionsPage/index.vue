@@ -8,7 +8,7 @@
             <span flex>
               {{ i18n.t('language') }}
             </span>
-            <select v-model="i18n.locale">
+            <select v-model="locale">
               <option v-for="locale in i18n.availableLocales" :key="locale" :value="locale">
                 {{ i18n.t('lang_name', {}, { locale }) }}
               </option>
@@ -40,6 +40,7 @@
 <script lang="ts">
 import { AppLayout } from '@/components'
 import { useI18n } from 'vue-i18n'
+import { i18n as globalI18n } from '@/i18n'
 import { storeNamespace } from '@/store'
 import { computed, defineComponent } from 'vue'
 
@@ -85,6 +86,7 @@ export default defineComponent({
 
     return {
       i18n: useI18n(),
+      locale: globalI18n.global.locale,
       gameSpeed,
       volume,
       mute,

@@ -1,5 +1,5 @@
 <template>
-  <div layout="column u4">
+  <div v-if="entry" layout="column u4">
     <!-- TITLE -->
     <h1 class="title">{{ entry.title }}</h1>
     <!-- eslint-disable-next-line vue/no-v-html -->
@@ -11,11 +11,15 @@
           v-for="(iGrid, i) in entry.grids"
           :key="i"
           :grid="iGrid"
-          :step="5"
+          :maxSteps="24"
           :defaultStep="2"
         />
       </div>
     </div>
+
+    <p>
+      {{ $gameText('Only the game model is shown here; real equipment may behave differently.') }}
+    </p>
 
     <!-- SECTIONS -->
     <EncyclopediaArticleSection
@@ -36,7 +40,7 @@
 </template>
 
 <script lang="ts">
-import { conceptNameList, elementNameList, getEntry } from './loadData'
+import { conceptNameList, elementNameList, getEntry, hasEntry } from './loadData'
 import EncyclopediaArticleSection from '@/components/EncyclopediaPage/EncyclopediaArticleSection.vue'
 import EncyclopediaBoard from '@/components/EncyclopediaPage/EncyclopediaBoard.vue'
 import EncyclopediaTransition from '@/components/EncyclopediaPage/EncyclopediaTransition.vue'
@@ -59,7 +63,7 @@ export default defineComponent({
     })
 
     const entry = computed(() => {
-      if (entryURL.value) {
+      if (entryURL.value && hasEntry(entryURL.value)) {
         const entry = getEntry(entryURL.value)
         return entry
       }
@@ -73,7 +77,7 @@ export default defineComponent({
     })
 
     const showMatrix = computed(() => {
-      const elem = importElem(entry.value?.elementName)
+      const elem = entry.value?.elementName ? importElem(entry.value.elementName) : null
       const dontShowMatrix = [Elem.Laser]
       return elem != null && dontShowMatrix.indexOf(elem) < 0
     })

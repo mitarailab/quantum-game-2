@@ -7,28 +7,28 @@
       {{ description }}
     </p>
     <p v-if="infoPayload.text" class="description">
-      {{ infoPayload.text }}
+      {{ $gameText(infoPayload.text) }}
     </p>
     <p
       v-for="(particle, index) in infoPayload.particles"
       :key="`info-particle-${index}`"
       class="description"
     >
-      Intensity {{ (100 * particleProbability(particle)).toFixed(1) }}% at
-      {{ directionToDegrees(particle.direction) }}°
+      {{ $gameText('Intensity') }} {{ (100 * particleProbability(particle)).toFixed(1) }}% ／
+      {{ $gameText('at') }} {{ directionToDegrees(particle.direction) }}°
     </p>
-    <router-link v-if="infoPayload.piece" :to="hyphenedElementEntryURL" class="link">
-      LEARN MORE
-    </router-link>
+    <router-link v-if="infoPayload.piece" :to="hyphenedElementEntryURL" class="link">{{
+      $gameText('LEARN MORE')
+    }}</router-link>
   </div>
 </template>
 
 <script lang="ts">
+import { gameText } from '@/i18n/game'
 import type { IInfoPayload } from '@/mixins/gameInterfaces'
-import { camelCaseToDash } from '@/engine/Helpers'
-import { elementsData } from '@/engine/elements'
+import { componentId, pieceDescription, pieceName } from '@/learning/components'
 import { assertUnreachable } from '@/types'
-import { particleProbability, directionToDegrees, elemName } from '@/engine/model'
+import { particleProbability, directionToDegrees } from '@/engine/model'
 import { computed, defineComponent, PropType } from 'vue'
 
 export default defineComponent({
@@ -46,11 +46,11 @@ export default defineComponent({
     const name = computed((): string => {
       switch (props.infoPayload.kind) {
         case 'piece':
-          return elemName(props.infoPayload.piece.type)
+          return pieceName(props.infoPayload.piece.type)
         case 'particles':
-          return 'photon state'
+          return gameText('photon state')
         case 'ui':
-          return 'HINT'
+          return gameText('HINT')
         default:
           assertUnreachable(props.infoPayload)
       }
@@ -59,7 +59,7 @@ export default defineComponent({
     const description = computed((): string => {
       switch (props.infoPayload.kind) {
         case 'piece':
-          return elementsData[props.infoPayload.piece.type].description
+          return pieceDescription(props.infoPayload.piece.type)
         case 'particles':
           return ''
         case 'ui':
@@ -70,8 +70,9 @@ export default defineComponent({
     })
 
     const hyphenedElementEntryURL = computed((): string => {
-      const addressName = camelCaseToDash(name.value)
-      return `/info/${addressName}`
+      return props.infoPayload.kind === 'piece'
+        ? `/info/${componentId(props.infoPayload.piece.type)}`
+        : '/info'
     })
 
     return {

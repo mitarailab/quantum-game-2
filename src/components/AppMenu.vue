@@ -2,18 +2,18 @@
   <transition name="fade">
     <div v-if="appMenuOpened" class="menu-overlay" flex layout="column">
       <menu layout="column around u1">
-        <router-link to="/">BACK TO THE MAIN PAGE</router-link>
-        <router-link v-if="currentLevel != null" :to="`/level/${currentLevel}`">
-          CONTINUE
-        </router-link>
-        <router-link to="/levels">LEVELS</router-link>
-        <router-link v-if="isLoggedIn" to="/myaccount">MY ACCOUNT</router-link>
-        <router-link v-else to="/login">LOG IN</router-link>
-        <router-link to="/lab">VIRTUAL LAB</router-link>
-        <router-link to="/levels">LEVELS</router-link>
-        <router-link to="/info">ENCYCLOPEDIA</router-link>
-        <router-link to="/options">OPTIONS</router-link>
-        <a href="https://medium.com/quantum-photons" target="_blank">BLOG</a>
+        <router-link to="/">{{ $gameText('BACK TO THE MAIN PAGE') }}</router-link>
+        <router-link v-if="currentLevel != null" :to="campaignLink(currentLevel)">{{
+          $gameText('CONTINUE')
+        }}</router-link>
+        <router-link to="/levels">{{ $gameText('LEVELS') }}</router-link>
+        <router-link v-if="isLoggedIn" to="/myaccount">{{ $gameText('MY ACCOUNT') }}</router-link>
+        <router-link v-else to="/login">{{ $gameText('LOG IN') }}</router-link>
+        <router-link to="/lab">{{ $gameText('VIRTUAL LAB') }}</router-link>
+        <router-link to="/levels">{{ $gameText('LEVELS') }}</router-link>
+        <router-link to="/info">{{ $gameText('ENCYCLOPEDIA') }}</router-link>
+        <router-link to="/options">{{ $gameText('OPTIONS') }}</router-link>
+        <a href="https://medium.com/quantum-photons" target="_blank">{{ $gameText('BLOG') }}</a>
       </menu>
     </div>
   </transition>
@@ -22,6 +22,7 @@
 <script lang="ts">
 import { useWindowEvent } from '@/mixins/event'
 import { storeNamespace } from '@/store'
+import { campaignLink } from '@/assets/data/levels'
 import { defineComponent, watchEffect } from 'vue'
 import { useRouter } from 'vue-router'
 
@@ -61,6 +62,7 @@ export default defineComponent(() => {
   return {
     isLoggedIn,
     currentLevel,
+    campaignLink,
     appMenuOpened,
   }
 })

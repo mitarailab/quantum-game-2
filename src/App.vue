@@ -26,7 +26,7 @@ export default defineComponent({
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
 }
 
 body {

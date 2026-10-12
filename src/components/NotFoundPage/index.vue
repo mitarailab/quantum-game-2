@@ -1,9 +1,11 @@
 <template>
   <div class="not-found">
     <h1>404</h1>
-    <p>OH NO :(</p>
+    <p>{{ $gameText('OH NO :(') }}</p>
     <img src="@/assets/graphics/rock_weasel.svg" alt="weasel" />
-    <router-link to="/"> <AppButton type="basic">TAKE ME BACK!</AppButton></router-link>
+    <router-link to="/">
+      <AppButton type="basic">{{ $gameText('TAKE ME BACK!') }}</AppButton></router-link
+    >
   </div>
 </template>
 

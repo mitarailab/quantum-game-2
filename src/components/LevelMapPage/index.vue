@@ -4,7 +4,7 @@
       <article class="main">
         <div class="container">
           <div class="groups">
-            <router-link class="levelLink" :to="`/lab`">VIRTUAL LAB</router-link>
+            <router-link class="levelLink" :to="`/lab`">{{ $gameText('VIRTUAL LAB') }}</router-link>
           </div>
           <div v-for="(group, i) in groups" :key="'group' + i" class="groups">
             <router-link
@@ -13,7 +13,7 @@
               class="levelLink"
               :to="`/level/${level.id}`"
             >
-              {{ level.id }} - {{ level.name }}
+              {{ level.id }} - {{ $gameText(level.name) }}
             </router-link>
           </div>
         </div>

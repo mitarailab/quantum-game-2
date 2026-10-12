@@ -12,8 +12,8 @@
     </template>
     <template v-if="showAside" #left>
       <div layout="column u4">
-        <EncyclopediaLinkList :entryList="elementNameList" title="Elements" />
-        <EncyclopediaLinkList :entryList="conceptNameList" title="Concepts" />
+        <EncyclopediaLinkList :entryList="elementNameList" :title="$gameText('Elements')" />
+        <EncyclopediaLinkList :entryList="conceptNameList" :title="$gameText('Concepts')" />
       </div>
     </template>
   </AppLayout>
@@ -23,11 +23,12 @@
 import AppLayout from '@/components/AppLayout.vue'
 import EncyclopediaLinkList from '@/components/EncyclopediaPage/EncyclopediaLinkList.vue'
 import { computed, defineComponent } from 'vue'
+import { gameText } from '@/i18n/game'
 import { useRoute } from 'vue-router'
-import { elementNameList, conceptNameList, getEntry } from './loadData'
+import { elementNameList, conceptNameList, getEntry, hasEntry } from './loadData'
 
 const rootCrumb = {
-  text: 'Encyclopedia',
+  text: '部品とシミュレーター',
   to: '/info',
 }
 
@@ -46,7 +47,7 @@ export default defineComponent({
     })
 
     const entry = computed(() => {
-      if (entryId.value != null) {
+      if (entryId.value != null && hasEntry(entryId.value)) {
         return getEntry(entryId.value)
       } else {
         return null
@@ -60,14 +61,14 @@ export default defineComponent({
     const crumbs = computed(() => {
       if (entry.value != null) {
         return [
-          rootCrumb,
+          { ...rootCrumb, text: gameText('Encyclopedia') },
           {
             text: entry.value.title,
             to: `/info/${entryId.value}`,
           },
         ]
       }
-      return [rootCrumb]
+      return [{ ...rootCrumb, text: gameText('Encyclopedia') }]
     })
 
     return {

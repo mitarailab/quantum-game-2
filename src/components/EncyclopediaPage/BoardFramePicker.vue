@@ -2,7 +2,11 @@
   <div class="btn-group" layout="column center">
     <div ref="buttons" @pointerdown="onPointer" @pointermove="onPointer">
       <span v-for="index in playhead.totalFrames" :key="index">
-        <button :class="{ selected: playhead.frameIndex === index - 1 }"></button>
+        <button
+          :class="{ selected: playhead.frameIndex === index - 1 }"
+          :aria-label="`${$gameText('Step')} ${index - 1}`"
+          @click="playhead.seek(index - 1)"
+        ></button>
       </span>
     </div>
   </div>

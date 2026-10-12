@@ -26,6 +26,7 @@
 </template>
 
 <script lang="ts">
+import { gameText } from '@/i18n/game'
 import Toolbox from '@/engine/Toolbox'
 import AppCell from '@/components/Board/AppCell.vue'
 import { validateInfoPayload } from '@/mixins/gameInterfaces'
@@ -64,7 +65,7 @@ export default defineComponent({
     )
 
     function showPieceHint(piece: Piece) {
-      emit('hover', { kind: 'piece', piece, text: 'Drag&drop on board.' })
+      emit('hover', { kind: 'piece', piece, text: gameText('Drag&drop on board.') })
     }
 
     function onGrab(elem: Elem) {

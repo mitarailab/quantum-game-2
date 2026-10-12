@@ -4,13 +4,14 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "node --openssl-legacy-provider node_modules/@vue/cli-service/bin/vue-cli-service.js serve",
+    "build": "node --openssl-legacy-provider node_modules/@vue/cli-service/bin/vue-cli-service.js build",
     "lint": "vue-cli-service lint",
     "lint-fix": "vue-cli-service lint --fix",
     "eslint-fix": "eslint --fix --ext .ts,.vue src",
     "deploy": "yarn lint && yarn build && yarn version --patch && yarn build && firebase deploy",
-    "update-entries": "ts-node src/utils/updateEntries"
+    "update-entries": "ts-node src/utils/updateEntries",
+    "test:learning": "node scripts/check-learning.cjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
@@ -62,11 +63,11 @@
     "jest": "^26.5.3",
     "last-commit-log": "^3.0.4",
     "markdown-it": "^11.0.1",
-    "node-sass": "^4.14.1",
     "prettier": "^2.1.2",
     "sass-loader": "^10.0.3",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3",
-    "vue-svg-loader": "^0.17.0-beta.2"
+    "vue-svg-loader": "^0.17.0-beta.2",
+    "sass": "1.32.13"
   }
 }

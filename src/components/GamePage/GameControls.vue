@@ -6,31 +6,49 @@
       <button
         type="button"
         :class="classes.back"
+        :aria-label="$gameText('Simulation: one step back.')"
+        :title="$gameText('Simulation: one step back.')"
         @click="playhead.stepBack()"
-        @mouseenter="$emit('hover', { kind: 'ui', text: 'Simulation: one step back.' })"
+        @mouseenter="$emit('hover', { kind: 'ui', text: $gameText('Simulation: one step back.') })"
       />
       <button
         class="play"
         type="button"
         :class="classes.play"
+        :aria-label="$gameText('Run the simulation.')"
+        :title="$gameText('Run the simulation.')"
         @click="playhead.toggle()"
-        @mouseenter="$emit('hover', { kind: 'ui', text: 'Run the simulation.' })"
+        @mouseenter="$emit('hover', { kind: 'ui', text: $gameText('Run the simulation.') })"
       />
       <button
         type="button"
         :class="classes.forward"
+        :aria-label="$gameText('Simulation: the next step.')"
+        :title="$gameText('Simulation: the next step.')"
         @click="playhead.stepForward()"
-        @mouseenter="$emit('hover', { kind: 'ui', text: 'Simulation: the next step.' })"
+        @mouseenter="$emit('hover', { kind: 'ui', text: $gameText('Simulation: the next step.') })"
       />
       <!-- <button type="button" :class="classes.fastForward" @click="$emit('fast-forward')" /> -->
     </span>
     <!-- FRAME INFO -->
     <span class="frameInfo" layout="column u2 center" flex>
       <div layout="row u2">
-        <button :class="classes.laser" @click="$emit('mode-laser')" />
-        <button :class="classes.wave" @click="$emit('mode-wave')" />
+        <button
+          :class="classes.laser"
+          :aria-label="$gameText('Classical laser beam')"
+          :title="$gameText('Classical laser beam')"
+          @click="$emit('mode-laser')"
+        />
+        <button
+          :class="classes.wave"
+          :aria-label="$gameText('Quantum simulation')"
+          :title="$gameText('Quantum simulation')"
+          @click="$emit('mode-wave')"
+        />
         <button
           :class="{ ...classes.experiment, blink: !classes.experiment.active && promptExperiment }"
+          :aria-label="$gameText('Running experiment')"
+          :title="$gameText('Running experiment')"
           @click="$emit('mode-experiment')"
         />
       </div>
@@ -41,27 +59,39 @@
       <button
         type="button"
         :class="classes.reload"
+        :aria-label="$gameText('Reset the level.')"
+        :title="$gameText('Reset the level.')"
         @click="$emit('reload')"
-        @mouseenter="$emit('hover', { kind: 'ui', text: 'Reset the level.' })"
+        @mouseenter="$emit('hover', { kind: 'ui', text: $gameText('Reset the level.') })"
       />
       <button
         type="button"
         :class="classes.sound"
+        :aria-label="$gameText('Volume')"
+        :title="$gameText('Volume')"
         @click="toggleSound(), showSoundHint()"
         @mouseenter="showSoundHint"
       />
       <button
         type="button"
         :class="classes.download"
+        :aria-label="$gameText('Download level as a JSON file.')"
+        :title="$gameText('Download level as a JSON file.')"
         @click="$emit('download')"
-        @mouseenter="$emit('hover', { kind: 'ui', text: 'Download level as a JSON file.' })"
+        @mouseenter="
+          $emit('hover', { kind: 'ui', text: $gameText('Download level as a JSON file.') })
+        "
       />
 
       <label
         for="fileUpload"
+        :aria-label="$gameText('Load level from a JSON file.')"
+        :title="$gameText('Load level from a JSON file.')"
         :class="classes.upload"
         class="upload"
-        @mouseenter="$emit('hover', { kind: 'ui', text: 'Load level from a JSON file.' })"
+        @mouseenter="
+          $emit('hover', { kind: 'ui', text: $gameText('Load level from a JSON file.') })
+        "
       >
       </label>
       <input id="fileUpload" type="file" @change="$emit('upload', $event)" />
@@ -69,6 +99,8 @@
       <button
         type="button"
         :class="classes.save"
+        :aria-label="$gameText('Save level to the cloud (you need to be logged in).')"
+        :title="$gameText('Save level to the cloud (you need to be logged in).')"
         @click="$emit('save')"
         @mouseenter="showSaveHint()"
       />
@@ -77,6 +109,7 @@
 </template>
 
 <script lang="ts">
+import { gameText } from '@/i18n/game'
 import { validateInfoPayload } from '@/mixins/gameInterfaces'
 import { storeNamespace } from '@/store'
 import { computed, defineComponent, PropType, proxyRefs } from 'vue'
@@ -109,11 +142,11 @@ export default defineComponent({
     const displayStatus = computed(() => {
       switch (props.visMode) {
         case SimulationVisMode.Laser:
-          return 'Classical laser beam'
+          return gameText('Classical laser beam')
         case SimulationVisMode.QuantumWave:
-          return 'Quantum simulation'
+          return gameText('Quantum simulation')
         case SimulationVisMode.Experiment:
-          return 'Running experiment'
+          return gameText('Running experiment')
       }
     })
 
@@ -155,14 +188,14 @@ export default defineComponent({
     function showSoundHint() {
       emit('hover', {
         kind: 'ui',
-        text: `Sound is ${soundActive.value ? 'ON' : 'OFF'}`,
+        text: gameText(`Sound is ${soundActive.value ? 'ON' : 'OFF'}`),
       })
     }
 
     function showSaveHint() {
       emit('hover', {
         kind: 'ui',
-        text: 'Save level to the cloud (you need to be logged in).',
+        text: gameText('Save level to the cloud (you need to be logged in).'),
       })
     }
 

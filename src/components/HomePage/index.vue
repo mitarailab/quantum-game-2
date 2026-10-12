@@ -5,10 +5,10 @@
     </div>
     <div layout="row wrap middle u5">
       <router-link to="/level/1">
-        <AppButton class="button" type="big">PLAY GAME</AppButton>
+        <AppButton class="button" type="big">{{ $gameText('PLAY GAME') }}</AppButton>
       </router-link>
       <router-link to="/lab">
-        <AppButton class="button" type="big">VIRTUAL LAB</AppButton>
+        <AppButton class="button" type="big">{{ $gameText('VIRTUAL LAB') }}</AppButton>
       </router-link>
     </div>
     <div class="hello" layout="column u10">
@@ -18,23 +18,21 @@
     </div>
     <div class="gameVersion">
       <p>
-        Version {{ version }} (beta), based on a
+        日本語版 {{ version }}（開発中）／
         <template v-if="commitHash">
           <a
-            :href="`https://github.com/Quantum-Game/quantum-game-2/commit/${commitHash}`"
+            :href="`https://github.com/mitarailab/quantum-game-2/commit/${commitHash}`"
             target="_blank"
             >{{ commitDate }}</a
           >
-          commit.
+          の更新。
         </template>
-        <template v-else>{{ commitDate }} snapshot.</template>
+        <template v-else>{{ commitDate }}時点。</template>
         <br />
-        For optimal experience, play PC (mobile version coming soon).
+        PCのブラウザでの操作を推奨します。日本語版の開発：Mitarai Lab。
       </p>
     </div>
     <div class="hello" layout="column u10">
-      <HomepageTestimonials class="testimonials" />
-      <HomepageSocial />
       <HomepageAuthors />
       <HomepageHistory />
     </div>
@@ -47,8 +45,6 @@
 <script lang="ts">
 import AppButton from '@/components/AppButton.vue'
 import HomepageAuthors from '@/components/HomePage/HomepageAuthors.vue'
-import HomepageSocial from '@/components/HomePage/HomepageSocial.vue'
-import HomepageTestimonials from '@/components/HomePage/HomepageTestimonials.vue'
 import HomepageInteractive from '@/components/HomePage/HomepageInteractive.vue'
 import HomepageHistory from '@/components/HomePage/HomepageHistory.vue'
 import AppCell from '@/components/Board/AppCell.vue'
@@ -60,9 +56,7 @@ export default defineComponent({
   components: {
     AppButton,
     HomepageAuthors,
-    HomepageSocial,
     HomepageHistory,
-    HomepageTestimonials,
     HomepageInteractive,
     AppCell,
   },
@@ -138,11 +132,6 @@ p {
   @include media('<large') {
     margin-bottom: 6rem;
   }
-}
-
-.testimonials {
-  max-width: 1300px;
-  width: 100vw;
 }
 
 a {

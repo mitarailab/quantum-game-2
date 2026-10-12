@@ -1,14 +1,10 @@
 <template>
   <div class="interactive">
-    <EncyclopediaBoard :grid="boardMZ" :step="5" class="grid" :defaultStep="2" />
+    <EncyclopediaBoard :grid="boardMZ" :maxSteps="24" class="grid" :defaultStep="2" />
   </div>
   <p>
-    For more interactive, educational materials, see
-    <router-link to="/info/faraday-rotator">Faraday Rotator explorable explanation</router-link> and
-    <a href="https://github.com/Quantum-Game/bra-ket-vue" target="_blank"
-      >⟨𝜑|𝜓⟩.vue visualizer for quantum states and matrices</a
-    >, which can be used for quantum computing, quantum chemistry or any other discrete quantum
-    system.
+    部品の向きを変えて、光の経路と検出確率を確かめましょう。
+    <router-link to="/info">部品とシミュレーターを見る</router-link>
   </p>
 </template>
 
@@ -29,13 +25,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-a {
-  color: #eab5ff;
-  text-decoration: none;
-}
-a:hover {
-  color: white;
-}
 .interactive {
   background: #2e006a;
   padding: 30px;

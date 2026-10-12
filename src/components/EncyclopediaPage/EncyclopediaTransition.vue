@@ -1,8 +1,15 @@
 <template>
   <EncyclopediaSection>
-    <template #title>Transition matrix</template>
+    <template #title>{{ $gameText('Transition matrix') }}</template>
     <template #content>
-      <p>This matrix ({{ elementName }}{{ rotationText }}) is {{ operatorPropertiesText }}.</p>
+      <p>{{ displayName }}{{ rotationText }}：{{ operatorPropertiesText }}</p>
+      <p>
+        {{
+          $gameText(
+            'Move over a matrix column to choose the input direction and polarization. The board shows the resulting state.'
+          )
+        }}
+      </p>
       <div layout="row wrap around u10" class="grids">
         <div class="matrix">
           <MatrixViewer
@@ -28,12 +35,14 @@
 </template>
 
 <script lang="ts">
+import { gameText } from '@/i18n/game'
 import { IGrid } from '@/engine/interfaces'
-import { MatrixViewer } from 'bra-ket-vue'
+import { MatrixViewer } from '@/components/QuantumStateViews'
 import EncyclopediaBoard from '@/components/EncyclopediaPage/EncyclopediaBoard.vue'
 import EncyclopediaSection from '@/components/EncyclopediaPage/EncyclopediaSection.vue'
 import { Vector, Dimension } from 'quantum-tensors'
 import { elementsData } from '@/engine/elements'
+import { pieceName } from '@/learning/components'
 import {
   defaultPiece,
   importElem,
@@ -56,6 +65,10 @@ export default defineComponent({
     defaultRotation: { type: Number, default: 0 },
   },
   setup(props) {
+    const displayName = computed(() => {
+      const elem = importElem(props.elementName)
+      return elem == null ? props.elementName : pieceName(elem)
+    })
     const rotation = ref(rotationFromDegrees(props.defaultRotation))
 
     const grid = computed(
@@ -89,7 +102,7 @@ export default defineComponent({
     const rotationText = computed((): string => {
       const elem = importElem(props.elementName)
       if (elem == null) return ''
-      return elementsData[elem].ascii.length > 1 ? ` at ${rotationToDegrees(rotation.value)}°` : ''
+      return elementsData[elem].ascii.length > 1 ? `（${rotationToDegrees(rotation.value)}°）` : ''
     })
 
     function updateIndicators(newVector: Vector): void {
@@ -148,11 +161,12 @@ export default defineComponent({
     const operatorPropertiesText = computed((): string => {
       return operatorProperties.value
         .filter((property) => property.is)
-        .map((property) => property.name)
+        .map((property) => gameText(property.name))
         .join(', ')
     })
 
     return {
+      displayName,
       grid,
       rotation,
       vector,

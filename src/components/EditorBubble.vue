@@ -5,7 +5,7 @@
       <div layout="column u2" class="params">
         <template v-for="param in pieceParams" :key="param.label">
           <label v-if="param.kind === ParamKind.Range" layout="row u1">
-            <span>{{ param.label }}</span>
+            <span>{{ $gameText(param.label) }}</span>
             <input v-model.number="param.ref.value" class="shortnum" />
             <input
               v-model.number="param.ref.value"
@@ -16,11 +16,11 @@
             />
           </label>
           <label v-if="param.kind === ParamKind.Boolean">
-            <span>{{ param.label }}</span>
+            <span>{{ $gameText(param.label) }}</span>
             <input v-model.number="param.ref.value" type="checkbox" />
           </label>
           <label v-if="param.kind === ParamKind.Choice">
-            <span>{{ param.label }}</span>
+            <span>{{ $gameText(param.label) }}</span>
             <select v-model.number="param.ref.value">
               <option v-for="(c, i) in param.choices" :key="c" :value="i">{{ c }}</option>
             </select>
@@ -187,7 +187,7 @@ export default defineComponent({
       if ('goalThreshold' in p) {
         params.push({
           kind: ParamKind.Range,
-          label: 'Polarization',
+          label: 'Goal threshold',
           min: 0,
           max: 100,
           ref: computed({

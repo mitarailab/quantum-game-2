@@ -2,12 +2,7 @@
   <div class="element-list" :class="{ entriesExpanded }" layout="column">
     <h3 v-if="title" @click="toggleEntries">{{ title }}</h3>
     <div class="entries">
-      <router-link
-        v-for="entry in sortedList"
-        :key="entry.name"
-        class="link"
-        :to="`/info/${entry}`"
-      >
+      <router-link v-for="entry in sortedList" :key="entry" class="link" :to="`/info/${entry}`">
         {{ entryTitle(entry) }}
       </router-link>
     </div>

@@ -54,6 +54,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
+        implementation: require('sass'),
         additionalData: `@import "~@/assets/styles/global.scss";`,
       },
     },

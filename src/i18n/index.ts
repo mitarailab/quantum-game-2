@@ -22,20 +22,6 @@ const { context, messages } = loadMessages()
 
 const availableLanguages = Object.keys(messages)
 
-function getBrowserLocale() {
-  const langs = navigator.languages != null ? navigator.languages : [navigator.language]
-  for (const lang of langs) {
-    if (availableLanguages.includes(lang)) {
-      return lang
-    }
-    const countryCode = lang.trim().split(/-|_/)[0]
-    if (availableLanguages.includes(countryCode)) {
-      return countryCode
-    }
-  }
-  return 'en'
-}
-
 const LANG_STORAGE_KEY = 'lang'
 
 function getSavedLocale() {
@@ -55,14 +41,21 @@ function saveCurrentLocale() {
 }
 
 export const i18n = createI18n({
-  locale: getSavedLocale() || getBrowserLocale(),
+  locale: getSavedLocale() || 'ja',
   fallbackLocale: 'en',
   pluralRules,
   messages,
 })
 
 // in vue3, that should just be watch(..)
-watch(() => i18n.global.locale, saveCurrentLocale)
+watch(
+  () => i18n.global.locale.value,
+  (locale) => {
+    document.documentElement.lang = locale
+    saveCurrentLocale()
+  },
+  { immediate: true }
+)
 
 // in-place localization hot reloading
 if (module.hot) {

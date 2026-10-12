@@ -719,21 +719,6 @@
       "status": "metadata-only"
     },
     {
-      "name": "node-sass",
-      "requested": "^4.14.1",
-      "version": "4.14.1",
-      "group": "devDependencies",
-      "license": "MIT",
-      "repository": {
-        "url": "git+https://github.com/sass/node-sass.git",
-        "type": "git"
-      },
-      "source": "https://registry.npmjs.org/node-sass/4.14.1",
-      "tarball": "https://registry.npmjs.org/node-sass/-/node-sass-4.14.1.tgz",
-      "integrity": "sha512-sjCuOlvGyCJS40R8BscF5vhVlQjNN069NtQ1gSxyK1u9iqvn6tf7O1R4GNowVZfiZUCRt5MmMs1xd+4V/7Yr0g==",
-      "status": "metadata-only"
-    },
-    {
       "name": "prettier",
       "requested": "^2.1.2",
       "version": "2.1.2",
@@ -806,6 +791,21 @@
       "source": "https://registry.npmjs.org/vue-svg-loader/0.17.0-beta.2",
       "tarball": "https://registry.npmjs.org/vue-svg-loader/-/vue-svg-loader-0.17.0-beta.2.tgz",
       "integrity": "sha512-iMUGJTKEcuNAG8VXOchjA8443IqEmEi2Aw6EVIHWma2cC4TUQ7Oet5Yry9IFfqXQXXvyzXz5EyttVvfRGTNH4Q==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "sass",
+      "requested": "1.32.13",
+      "version": "1.32.13",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/sass/dart-sass.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/sass/1.32.13",
+      "tarball": "https://registry.npmjs.org/sass/-/sass-1.32.13.tgz",
+      "integrity": "sha512-dEgI9nShraqP7cXQH+lEXVf73WOPCse0QlFzSD8k+1TcOxCMwVXfQlr0jtoluZysQOyJGnfr21dLvYKDJq8HkA==",
       "status": "metadata-only"
     }
   ]

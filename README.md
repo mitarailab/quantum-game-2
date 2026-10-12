@@ -19,6 +19,20 @@ cd quantum-game-2
 git switch japanese
 ```
 
+### 日本語版の現在の範囲
+
+ゲームのメニュー、36ステージの名称、操作ヒント、ステージ間の会話、数式ビューの凡例を日本語化しています。
+設定画面で日本語・英語を切り替えられます。ステージの識別子や保存用JSONは変更しません。
+
+「部品を学ぶ」では、本体のシミュレーターを使い、部品の回転、状態のステップ送り、遷移行列による入力・出力の確認ができます。
+部品の説明文と実験盤面はこのフォーク用に新しく作成し、旧百科事典の文章・写真・盤面データはアプリから読み込んでいません。
+元の百科事典データは出典を保持してソース内に残っています。
+
+Node.js 26で起動・ビルドを確認しました。Yarn 1系で `yarn install --frozen-lockfile --ignore-engines` を実行し、
+`yarn serve --host 127.0.0.1` でローカル起動できます。古いnode-sassはSassへ置き換えています。
+`yarn test:learning` で、独立した学習盤面、鏡の回転、分岐・干渉の確率、言語切り替えを確認できます。
+ログイン・クラウド保存の日本語化と研究室用Firebase設定は、このゲーム部分の対応に含めていません。
+
 以下は上流の説明・クレジットです。
 
 A puzzle game with photons, superposition and quantum measurement, right in your browser. With true quantum mechanics underneath!

@@ -4,6 +4,7 @@ import router from './router'
 import { store } from './store/store'
 import './registerServiceWorker'
 import { i18n } from './i18n'
+import { gameTranslationPlugin } from './i18n/game'
 import { flagsPlugin } from './flags'
 import App from './App.vue'
 
@@ -16,6 +17,7 @@ createApp(App)
   //   config: { id: 'UA-56225776-1' },
   // })
   .use(i18n)
+  .use(gameTranslationPlugin)
   .use(store)
   .use(flagsPlugin)
   .mount('#app')

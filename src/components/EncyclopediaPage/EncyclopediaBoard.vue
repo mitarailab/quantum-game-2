@@ -9,12 +9,17 @@
       @touch="updateRotation"
     />
     <BoardFramePicker :playhead="playheadCtl" />
-    <KetViewer class="ket" :vector="playheadCtl.activeFrame.vector" :polBasis="polBasis" />
+    <KetViewer
+      v-if="playheadCtl.activeFrame"
+      class="ket"
+      :vector="playheadCtl.activeFrame?.vector"
+      :polBasis="polBasis"
+    />
   </div>
 </template>
 
 <script lang="ts">
-import { KetViewer } from 'bra-ket-vue'
+import { KetViewer } from '@/components/QuantumStateViews'
 import Board from '@/components/Board/index.vue'
 import BoardFramePicker from './BoardFramePicker.vue'
 import { computed, defineComponent, PropType, watchEffect } from 'vue'

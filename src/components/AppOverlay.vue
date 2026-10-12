@@ -2,7 +2,7 @@
   <transition name="victory">
     <div v-if="victory" class="wrapper victory" @click="$emit('bg-click')">
       <div class="victory-circle" @click.stop>
-        <h2>You won!</h2>
+        <h2>{{ $gameText('You won!') }}</h2>
         <slot></slot>
       </div>
     </div>

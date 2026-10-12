@@ -8,6 +8,10 @@ Copyright (c) 2019 Piotr Migdał。MITライセンス全文は [LICENSE](LICENSE
 
 ## 百科事典
 
+現在のアプリの学習画面は、このフォーク用に新しく書いた部品説明と独立した実験盤面を使います。
+旧百科事典の文章・写真・盤面データはアプリから読み込んでいません。
+以下の条件は、ソース内に残した上流百科事典データについての表記です。
+
 [Quantum Game Encyclopedia](https://github.com/Quantum-Game/qg-encyclopedia) の文章は、
 Chiara Decaroli、Piotr Migdał および他の貢献者によるCC BY作品です。
 上流READMEに版番号・ライセンスURLがないため、版番号は確認中です。CC BY 4.0と断定しません。

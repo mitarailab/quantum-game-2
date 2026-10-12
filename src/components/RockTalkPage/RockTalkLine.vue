@@ -2,16 +2,15 @@
   <div>
     <div class="rock-text">
       <p v-for="(line, i) in dialogue" :key="`line-${i}`">
-        {{ line }}
+        {{ $gameText(String(line)) }}
       </p>
       <p v-if="isLinkEncyclopedia">
-        Check the
+        部品・しくみの説明：
         <router-link :to="`/info/${link}`"
           ><b>{{ link }}</b></router-link
         >
-        encyclopedia entry.
       </p>
-      <p v-if="isLinkExternal">Visit <a :href="link">link</a>.</p>
+      <p v-if="isLinkExternal">原作者の<a :href="link">関連情報</a>を見る。</p>
     </div>
     <img class="rock-line" src="@/assets/graphics/overlays/rock_talk_line.svg" alt="rock-line" />
     <div class="rock-img">

@@ -6,7 +6,7 @@
       :link="rockTalk.link"
     />
     <router-link v-if="nextLevelLink" class="button-next" :to="nextLevelLink">
-      <AppButton :overlay="true" :inline="false">NEXT LEVEL</AppButton>
+      <AppButton :overlay="true" :inline="false">{{ $gameText('NEXT LEVEL') }}</AppButton>
     </router-link>
   </div>
 </template>
