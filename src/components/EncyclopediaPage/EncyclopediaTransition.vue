@@ -25,7 +25,6 @@
             :grid="grid"
             :vector="vector"
             :maxSteps="2"
-            :defaultStep="2"
             @rotated="rotation = $event"
           />
         </div>

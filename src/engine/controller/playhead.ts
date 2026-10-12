@@ -6,7 +6,10 @@ import { Frame, Particle } from '../model'
 
 const storeOptions = storeNamespace('options')
 
-export function playheadController(options: { frames: () => Frame[] }): PlayheadController {
+export function playheadController(options: {
+  frames: () => Frame[]
+  loop?: boolean
+}): PlayheadController {
   const frameInterval = storeOptions.useGetter('gameSpeedInterval')
   const targetFrameIndex = ref(0)
   const isPlaying = ref(false)
@@ -46,11 +49,15 @@ export function playheadController(options: { frames: () => Frame[] }): Playhead
       const dt = time - (lastTime ?? time)
       lastTime = time
       const newTime = particlesTime.value + dt * speedOfLight.value
-      const t = Math.max(0, Math.min(newTime, totalFrames.value - 1))
+      // Include the final frame for one interval before starting the next cycle.
+      const looping = options.loop && expectedLastFrame.value > 0
+      const t = looping
+        ? Math.max(0, newTime) % (expectedLastFrame.value + 1)
+        : Math.max(0, Math.min(newTime, totalFrames.value - 1))
       particlesTime.value = t
       targetFrameIndex.value = Math.floor(t)
 
-      if (particlesTime.value >= expectedLastFrame.value) {
+      if (!looping && particlesTime.value >= expectedLastFrame.value) {
         doStop()
       }
     } else {

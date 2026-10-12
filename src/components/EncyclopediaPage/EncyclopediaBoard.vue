@@ -8,7 +8,6 @@
       :particles="playheadCtl.interpolatedParticles"
       @touch="updateRotation"
     />
-    <BoardFramePicker :playhead="playheadCtl" />
     <KetViewer
       v-if="playheadCtl.activeFrame"
       class="ket"
@@ -21,8 +20,7 @@
 <script lang="ts">
 import { KetViewer } from '@/components/QuantumStateViews'
 import Board from '@/components/Board/index.vue'
-import BoardFramePicker from './BoardFramePicker.vue'
-import { computed, defineComponent, PropType, watchEffect } from 'vue'
+import { computed, defineComponent, PropType, watch, watchEffect } from 'vue'
 import { gameController, playheadController } from '@/engine/controller'
 import { IGrid } from '@/engine/interfaces'
 import { Coord, Rotation, Vector } from '@/engine/model'
@@ -31,13 +29,11 @@ export default defineComponent({
   components: {
     Board,
     KetViewer,
-    BoardFramePicker,
   },
   props: {
     grid: { type: Object as PropType<IGrid>, required: true },
     vector: { type: Object as PropType<Vector>, required: false },
     maxSteps: { type: Number, required: false },
-    defaultStep: { type: Number, required: false },
   },
   emits: {
     rotated: (_: Rotation) => true,
@@ -54,8 +50,18 @@ export default defineComponent({
 
     const playheadCtl = playheadController({
       frames: () => gameCtl.sim?.frames ?? [],
+      loop: true,
     })
-    playheadCtl.seek(props.defaultStep ?? 0)
+
+    // Replay automatically, including after rotating a component or changing the input state.
+    watch(
+      () => playheadCtl.frames,
+      (frames) => {
+        playheadCtl.rewind(true)
+        if (frames.length > 1) playheadCtl.play({ interval: 600 })
+      },
+      { immediate: true }
+    )
 
     const laserParticles = computed(() => {
       return gameCtl.sim?.frames.flatMap((f) => f.particles) ?? []

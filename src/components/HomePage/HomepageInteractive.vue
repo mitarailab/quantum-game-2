@@ -1,6 +1,6 @@
 <template>
   <div class="interactive">
-    <EncyclopediaBoard :grid="boardMZ" :maxSteps="24" class="grid" :defaultStep="2" />
+    <EncyclopediaBoard :grid="boardMZ" :maxSteps="24" class="grid" />
   </div>
   <p>
     部品の向きを変えて、光の経路と検出確率を確かめましょう。

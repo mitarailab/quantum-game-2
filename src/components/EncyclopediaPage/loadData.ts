@@ -57,7 +57,7 @@ export function getEntry(name: string): IEntry & { defaultRotation?: number } {
         {
           title: gameText('How to explore'),
           content: gameText(
-            'Click the component to rotate it. Use the dots below the board to move through the simulation.'
+            'The simulation repeats automatically. Click rotatable components to change their orientation and observe the light paths.'
           ),
         },
       ],
@@ -77,7 +77,7 @@ export function getEntry(name: string): IEntry & { defaultRotation?: number } {
         {
           title: gameText('How to explore'),
           content: gameText(
-            'Click the component to rotate it. Use the dots below the board to move through the simulation.'
+            'The simulation repeats automatically. Click rotatable components to change their orientation and observe the light paths.'
           ),
         },
       ],

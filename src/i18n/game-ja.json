@@ -71,7 +71,6 @@
   "Hermitian": "エルミート",
   "normal": "正規",
   "How to explore": "操作方法",
-  "Click the component to rotate it. Use the dots below the board to move through the simulation.": "部品をクリックすると向きが変わります。盤面の下の丸いボタンで、光子の状態を1ステップずつ確認できます。",
   "Move over a matrix column to choose the input direction and polarization. The board shows the resulting state.": "行列の列にカーソルを合わせると、入力する光の向きと偏光を選べます。盤面には部品を通った後の状態が表示されます。",
   "Only the game model is shown here; real equipment may behave differently.": "ここで説明するのはゲーム内のモデルです。実際の装置の詳細な特性とは異なる場合があります。",
   "Intensity": "検出確率",
@@ -175,5 +174,6 @@
   "polarTau": "極形式（τ）",
   "Change basis": "基底の変更",
   "Next Level": "次のステージ",
-  "Previous Level": "前のステージ"
+  "Previous Level": "前のステージ",
+  "The simulation repeats automatically. Click rotatable components to change their orientation and observe the light paths.": "シミュレーションは自動で繰り返し動きます。回転できる部品をクリックして、光の進み方の変化を確かめましょう。"
 }

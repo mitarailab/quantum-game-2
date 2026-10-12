@@ -3,8 +3,9 @@ const path = require('path')
 const Module = require('module')
 const assert = require('assert')
 const root = path.resolve(__dirname, '..')
-// The engine is tested directly; only the browser locale service is substituted.
+// The engine is tested directly. Browser locale and animation time are controlled here.
 const locale = { value: 'ja' }
+const animationCallbacks = []
 const ts = require(path.join(root, 'node_modules/typescript'))
 const resolve = Module._resolveFilename
 Module._resolveFilename = function (id, ...rest) {
@@ -14,6 +15,16 @@ const load = Module._load
 Module._load = function (id, ...rest) {
   if (id === '@/i18n' || (id === './index' && rest[0]?.filename.endsWith('/i18n/game.ts'))) {
     return { i18n: { global: { locale } } }
+  }
+  if (id === '@/mixins') {
+    return {
+      useRaf: (callback) => animationCallbacks.push(callback),
+      waitFor: () => Promise.resolve(),
+      Easing: require(path.join(root, 'node_modules/@tweenjs/tween.js')).Easing,
+    }
+  }
+  if (id === '@/store' && rest[0]?.filename.endsWith('/controller/playhead.ts')) {
+    return { storeNamespace: () => ({ useGetter: () => require('vue').ref(200) }) }
   }
   return load.call(this, id, ...rest)
 }
@@ -74,6 +85,36 @@ locale.value = 'ja'
 for (const level of require(path.join(root, 'src/assets/data/levels/classicLevels.json'))) {
   assert.notEqual(gameText(level.name), level.name, `Missing translation for ${level.name}`)
 }
+
+// Learning playback repeats without skipping the output frame; game playback still stops.
+const { playheadController } = require(path.join(root, 'src/engine/controller/playhead.ts'))
+const frames = runSimulation(importLevel({ grid: componentGrid(Elem.Mirror) }).board, 24).frames
+const looping = playheadController({ frames: () => frames, loop: true })
+const advanceLoop = animationCallbacks[animationCallbacks.length - 1]
+looping.play({ interval: 600 })
+advanceLoop(0)
+advanceLoop((frames.length - 1) * 600)
+assert.equal(looping.frameIndex, frames.length - 1)
+assert.equal(looping.isPlaying, true)
+advanceLoop(frames.length * 600)
+assert.equal(looping.frameIndex, 0)
+assert.equal(looping.isPlaying, true)
+advanceLoop((frames.length + 1) * 600)
+assert.equal(looping.frameIndex, 1)
+
+const manual = playheadController({ frames: () => frames })
+const advanceManual = animationCallbacks[animationCallbacks.length - 1]
+manual.play({ interval: 600 })
+advanceManual(0)
+advanceManual((frames.length - 1) * 600)
+assert.equal(manual.frameIndex, frames.length - 1)
+assert.equal(manual.isPlaying, false)
+
+const stationary = playheadController({ frames: () => [frames[0]], loop: true })
+const advanceStationary = animationCallbacks[animationCallbacks.length - 1]
+stationary.play()
+advanceStationary(0)
+assert.equal(stationary.isPlaying, false)
 console.log(
-  'Learning entries, mirror rotation, beam-splitter probabilities, interference, locale switching and 36 level names passed.'
+  'Learning simulations, loop playback, manual playback, locale switching and 36 level names passed.'
 )

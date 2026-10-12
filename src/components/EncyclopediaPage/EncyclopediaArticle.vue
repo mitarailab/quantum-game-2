@@ -12,7 +12,6 @@
           :key="i"
           :grid="iGrid"
           :maxSteps="24"
-          :defaultStep="2"
         />
       </div>
     </div>
