@@ -11,7 +11,8 @@
     "eslint-fix": "eslint --fix --ext .ts,.vue src",
     "deploy": "yarn lint && yarn build && yarn version --patch && yarn build && firebase deploy",
     "update-entries": "ts-node src/utils/updateEntries",
-    "test:learning": "node scripts/check-learning.cjs"
+    "test:learning": "node scripts/check-learning.cjs",
+    "test:navigation": "node scripts/check-navigation.cjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",

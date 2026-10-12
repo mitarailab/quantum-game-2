@@ -2,7 +2,7 @@
   <AppLayout>
     <template #main>
       <h1>My Account</h1>
-      <h2>Hi {{ moduleGetterUserName }}!</h2>
+      <h2>Hi {{ userName }}!</h2>
       <p>User page is under construction. Right now, see:</p>
       <router-link to="/savedlevels"><AppButton> Saved and shared levels </AppButton> </router-link>
       <div class="signOut">

@@ -5,7 +5,9 @@
       :key="piece.type"
       :class="{ tool: true, inactive: count === 0 }"
       layout="column middle"
-      @mouseenter="showPieceHint(piece)"
+      @mouseenter="schedulePieceHint(piece)"
+      @mouseleave="cancelPieceHint"
+      @click="showPieceHint(piece)"
     >
       <svg
         viewBox="0 0 64 64"
@@ -30,7 +32,7 @@ import { gameText } from '@/i18n/game'
 import Toolbox from '@/engine/Toolbox'
 import AppCell from '@/components/Board/AppCell.vue'
 import { validateInfoPayload } from '@/mixins/gameInterfaces'
-import { computed, defineComponent, reactive, watchEffect } from 'vue'
+import { computed, defineComponent, onUnmounted, reactive, watchEffect } from 'vue'
 import { iMap } from '@/itertools'
 import { Elem, Piece, pieceFromTool } from '@/engine/model'
 
@@ -64,7 +66,20 @@ export default defineComponent({
       )
     )
 
+    let pendingHint: ReturnType<typeof setTimeout> | null = null
+    function cancelPieceHint() {
+      if (pendingHint != null) clearTimeout(pendingHint)
+      pendingHint = null
+    }
+    function schedulePieceHint(piece: Piece) {
+      cancelPieceHint()
+      // Crossing other tools on the way to the explanation must not change its link.
+      pendingHint = setTimeout(() => showPieceHint(piece), 150)
+    }
+    onUnmounted(cancelPieceHint)
+
     function showPieceHint(piece: Piece) {
+      cancelPieceHint()
       emit('hover', { kind: 'piece', piece, text: gameText('Drag&drop on board.') })
     }
 
@@ -76,7 +91,7 @@ export default defineComponent({
       emit('release')
     }
 
-    return { tools, showPieceHint, onGrab, onRelease }
+    return { tools, showPieceHint, schedulePieceHint, cancelPieceHint, onGrab, onRelease }
   },
 })
 </script>
@@ -84,6 +99,14 @@ export default defineComponent({
 <style lang="scss" scoped>
 .toolbox {
   pointer-events: initial;
+  @include media('>=large') {
+    // Keep the hovered component's explanation and link in view. Scrolling the
+    // whole page to that link otherwise changes which tool is under the cursor.
+    max-height: calc(100vh - 400px);
+    min-height: 96px;
+    overflow-y: auto;
+    align-content: flex-start;
+  }
 }
 
 .tool {

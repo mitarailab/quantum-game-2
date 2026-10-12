@@ -11,10 +11,7 @@
   {
     "id": "mirror",
     "graphics": "rock_sceptical",
-    "dialogue": [
-      "Do you really know what is a mirror?",
-      "And what is better than silver?"
-    ],
+    "dialogue": ["Do you really know what is a mirror?", "And what is better than silver?"],
     "link": "mirror"
   },
   {
@@ -40,7 +37,10 @@
   {
     "id": "twitter",
     "graphics": "pile",
-    "dialogue": ["That's it for now!", "Do you want something more? Check us on Twitter!"],
-    "link": "https://twitter.com/quantumgameio"
+    "dialogue": [
+      "That's it for now!",
+      "Do you want something more? Explore the original project on GitHub!"
+    ],
+    "link": "https://github.com/Quantum-Game/quantum-game-2"
   }
 ]

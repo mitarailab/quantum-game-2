@@ -1,0 +1,1536 @@
+{
+  "date": "2026-10-13",
+  "environment": "Local Vue development server, 127.0.0.1:8080, Japanese locale, desktop browser",
+  "browser": {
+    "initial_pass_successful_movements": 166,
+    "initial_pass_scope": [
+      "38 stage list entries (36 game stages and 2 benchmarks)",
+      "Previous/next stage links",
+      "6 inter-stage dialogues",
+      "8 internal menu links"
+    ],
+    "follow_up_records": 144,
+    "reproduced_wrong_component_links_before_fix": [
+      {
+        "label": "自由実験の部品1 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/polarizer",
+        "headings": [
+          "偏光子",
+          "部品の透過軸に沿った偏光成分だけを通します。入力偏光と軸の角度によって、通過後の確率が変わります。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "鏡の説明 → 鏡の学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/corner-cube",
+        "headings": [
+          "コーナーキューブ",
+          "光を入ってきた方向へ折り返します。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      }
+    ],
+    "successful_movements_total": 308,
+    "follow_up_scope": [
+      "24 learning cards",
+      "24 learning sidebar destinations",
+      "Learning breadcrumbs and menu return links",
+      "16 lab information links and return navigation",
+      "Dialogue-to-learning links",
+      "Login/registration links",
+      "Browser Back/Forward",
+      "Account-to-saved-levels link without signing in",
+      "Expected 404 and its home link",
+      "Home-to-lab link",
+      "Lab menu after correction"
+    ],
+    "final_console_errors_or_warnings": [],
+    "records": [
+      {
+        "label": "一覧 → 光子源",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/laser",
+        "actual": "http://127.0.0.1:8080/info/laser",
+        "headings": [
+          "光子源",
+          "矢印の向きへ、指定した偏光の光子を送り出します。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "側面リンク → 検出器",
+        "from": "http://127.0.0.1:8080/info/laser",
+        "target": "/info/detector",
+        "actual": "http://127.0.0.1:8080/info/detector",
+        "headings": [
+          "検出器",
+          "光子を検出して確率を表示します。この版の計算では向きによる選別はなく、全方向検出器と同じ吸収作用です。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/detector",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 検出器",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/detector",
+        "actual": "http://127.0.0.1:8080/info/detector",
+        "headings": [
+          "検出器",
+          "光子を検出して確率を表示します。この版の計算では向きによる選別はなく、全方向検出器と同じ吸収作用です。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 全方向検出器",
+        "from": "http://127.0.0.1:8080/info/detector",
+        "target": "/info/detector-four",
+        "actual": "http://127.0.0.1:8080/info/detector-four",
+        "headings": [
+          "全方向検出器",
+          "どの方向から来た光子も検出します。複数の経路から届いた結果を、この検出器で確かめられます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/detector-four",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 全方向検出器",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/detector-four",
+        "actual": "http://127.0.0.1:8080/info/detector-four",
+        "headings": [
+          "全方向検出器",
+          "どの方向から来た光子も検出します。複数の経路から届いた結果を、この検出器で確かめられます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 岩",
+        "from": "http://127.0.0.1:8080/info/detector-four",
+        "target": "/info/rock",
+        "actual": "http://127.0.0.1:8080/info/rock",
+        "headings": [
+          "岩",
+          "光子を吸収します。ここへ届いた成分は、その後の経路には進みません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/rock",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 岩",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/rock",
+        "actual": "http://127.0.0.1:8080/info/rock",
+        "headings": [
+          "岩",
+          "光子を吸収します。ここへ届いた成分は、その後の経路には進みません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 地雷",
+        "from": "http://127.0.0.1:8080/info/rock",
+        "target": "/info/mine",
+        "actual": "http://127.0.0.1:8080/info/mine",
+        "headings": [
+          "地雷",
+          "光子を吸収すると失敗につながる部品です。地雷での検出確率を抑えながら、目標の検出器へ導きましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/mine",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 地雷",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/mine",
+        "actual": "http://127.0.0.1:8080/info/mine",
+        "headings": [
+          "地雷",
+          "光子を吸収すると失敗につながる部品です。地雷での検出確率を抑えながら、目標の検出器へ導きましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 鏡",
+        "from": "http://127.0.0.1:8080/info/mine",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/mirror",
+        "headings": [
+          "鏡",
+          "入ってきた光の進行方向を、鏡の向きに応じて変えます。クリックして向きを変え、反射先を確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/mirror",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 鏡",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/mirror",
+        "headings": [
+          "鏡",
+          "入ってきた光の進行方向を、鏡の向きに応じて変えます。クリックして向きを変え、反射先を確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → コーナーキューブ",
+        "from": "http://127.0.0.1:8080/info/mirror",
+        "target": "/info/corner-cube",
+        "actual": "http://127.0.0.1:8080/info/corner-cube",
+        "headings": [
+          "コーナーキューブ",
+          "光を入ってきた方向へ折り返します。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/corner-cube",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → コーナーキューブ",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/corner-cube",
+        "actual": "http://127.0.0.1:8080/info/corner-cube",
+        "headings": [
+          "コーナーキューブ",
+          "光を入ってきた方向へ折り返します。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → ビームスプリッター",
+        "from": "http://127.0.0.1:8080/info/corner-cube",
+        "target": "/info/beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/beam-splitter",
+        "headings": [
+          "ビームスプリッター",
+          "入力した光の状態を透過と反射の経路へ分けます。標準設定では、それぞれの経路で検出される確率は半分です。光子が2個になるわけではありません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/beam-splitter",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → ビームスプリッター",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/beam-splitter",
+        "headings": [
+          "ビームスプリッター",
+          "入力した光の状態を透過と反射の経路へ分けます。標準設定では、それぞれの経路で検出される確率は半分です。光子が2個になるわけではありません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → コーティング付きビームスプリッター",
+        "from": "http://127.0.0.1:8080/info/beam-splitter",
+        "target": "/info/coated-beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/coated-beam-splitter",
+        "headings": [
+          "コーティング付きビームスプリッター",
+          "この版では通常のビームスプリッターと同じ作用です。透過と反射の経路に状態を分けます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/coated-beam-splitter",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → コーティング付きビームスプリッター",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/coated-beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/coated-beam-splitter",
+        "headings": [
+          "コーティング付きビームスプリッター",
+          "この版では通常のビームスプリッターと同じ作用です。透過と反射の経路に状態を分けます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 偏光ビームスプリッター",
+        "from": "http://127.0.0.1:8080/info/coated-beam-splitter",
+        "target": "/info/polarizing-beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/polarizing-beam-splitter",
+        "headings": [
+          "偏光ビームスプリッター",
+          "偏光によって進む経路を変えます。部品の向きと入力偏光を変え、透過・反射する成分を比べましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/polarizing-beam-splitter",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 偏光ビームスプリッター",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/polarizing-beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/polarizing-beam-splitter",
+        "headings": [
+          "偏光ビームスプリッター",
+          "偏光によって進む経路を変えます。部品の向きと入力偏光を変え、透過・反射する成分を比べましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 糖溶液",
+        "from": "http://127.0.0.1:8080/info/polarizing-beam-splitter",
+        "target": "/info/sugar-solution",
+        "actual": "http://127.0.0.1:8080/info/sugar-solution",
+        "headings": [
+          "糖溶液",
+          "偏光の向きを回転させます。ゲームの標準設定では45°回転させます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/sugar-solution",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 糖溶液",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/sugar-solution",
+        "actual": "http://127.0.0.1:8080/info/sugar-solution",
+        "headings": [
+          "糖溶液",
+          "偏光の向きを回転させます。ゲームの標準設定では45°回転させます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → ファラデー回転子",
+        "from": "http://127.0.0.1:8080/info/sugar-solution",
+        "target": "/info/faraday-rotator",
+        "actual": "http://127.0.0.1:8080/info/faraday-rotator",
+        "headings": [
+          "ファラデー回転子",
+          "偏光を回転させる部品です。往復する光に対する作用を糖溶液と比べてみましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/faraday-rotator",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → ファラデー回転子",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/faraday-rotator",
+        "actual": "http://127.0.0.1:8080/info/faraday-rotator",
+        "headings": [
+          "ファラデー回転子",
+          "偏光を回転させる部品です。往復する光に対する作用を糖溶液と比べてみましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 偏光子",
+        "from": "http://127.0.0.1:8080/info/faraday-rotator",
+        "target": "/info/polarizer",
+        "actual": "http://127.0.0.1:8080/info/polarizer",
+        "headings": [
+          "偏光子",
+          "部品の透過軸に沿った偏光成分だけを通します。入力偏光と軸の角度によって、通過後の確率が変わります。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/polarizer",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 偏光子",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/polarizer",
+        "actual": "http://127.0.0.1:8080/info/polarizer",
+        "headings": [
+          "偏光子",
+          "部品の透過軸に沿った偏光成分だけを通します。入力偏光と軸の角度によって、通過後の確率が変わります。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → ¼波長板",
+        "from": "http://127.0.0.1:8080/info/polarizer",
+        "target": "/info/quarter-wave-plate",
+        "actual": "http://127.0.0.1:8080/info/quarter-wave-plate",
+        "headings": [
+          "¼波長板",
+          "2つの直交する偏光成分の間に、¼周期の位相差を与えます。入力と部品の向きによって、直線偏光と円偏光の変換を試せます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/quarter-wave-plate",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → ¼波長板",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/quarter-wave-plate",
+        "actual": "http://127.0.0.1:8080/info/quarter-wave-plate",
+        "headings": [
+          "¼波長板",
+          "2つの直交する偏光成分の間に、¼周期の位相差を与えます。入力と部品の向きによって、直線偏光と円偏光の変換を試せます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → ½波長板",
+        "from": "http://127.0.0.1:8080/info/quarter-wave-plate",
+        "target": "/info/half-wave-plate",
+        "actual": "http://127.0.0.1:8080/info/half-wave-plate",
+        "headings": [
+          "½波長板",
+          "2つの直交する偏光成分の間に、½周期の位相差を与えます。向きを変えて、出力の偏光がどう変わるか確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/half-wave-plate",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → ½波長板",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/half-wave-plate",
+        "actual": "http://127.0.0.1:8080/info/half-wave-plate",
+        "headings": [
+          "½波長板",
+          "2つの直交する偏光成分の間に、½周期の位相差を与えます。向きを変えて、出力の偏光がどう変わるか確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → ガラス板",
+        "from": "http://127.0.0.1:8080/info/half-wave-plate",
+        "target": "/info/glass",
+        "actual": "http://127.0.0.1:8080/info/glass",
+        "headings": [
+          "ガラス板",
+          "光の状態に¼周期の位相変化を与えます。単独の経路の確率ではなく、経路を重ねたときの干渉に注目しましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/glass",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → ガラス板",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/glass",
+        "actual": "http://127.0.0.1:8080/info/glass",
+        "headings": [
+          "ガラス板",
+          "光の状態に¼周期の位相変化を与えます。単独の経路の確率ではなく、経路を重ねたときの干渉に注目しましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 真空セル",
+        "from": "http://127.0.0.1:8080/info/glass",
+        "target": "/info/vacuum-jar",
+        "actual": "http://127.0.0.1:8080/info/vacuum-jar",
+        "headings": [
+          "真空セル",
+          "ガラス板とは逆向きの¼周期の位相変化を与えます。経路を重ねたときの干渉を変えられます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/vacuum-jar",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 真空セル",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/vacuum-jar",
+        "actual": "http://127.0.0.1:8080/info/vacuum-jar",
+        "headings": [
+          "真空セル",
+          "ガラス板とは逆向きの¼周期の位相変化を与えます。経路を重ねたときの干渉を変えられます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 吸収フィルター",
+        "from": "http://127.0.0.1:8080/info/vacuum-jar",
+        "target": "/info/absorber",
+        "actual": "http://127.0.0.1:8080/info/absorber",
+        "headings": [
+          "吸収フィルター",
+          "通過する光の振幅を弱めます。標準設定では、通過後に残る確率は半分です。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/absorber",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 吸収フィルター",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/absorber",
+        "actual": "http://127.0.0.1:8080/info/absorber",
+        "headings": [
+          "吸収フィルター",
+          "通過する光の振幅を弱めます。標準設定では、通過後に残る確率は半分です。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 壁",
+        "from": "http://127.0.0.1:8080/info/absorber",
+        "target": "/info/wall",
+        "actual": "http://127.0.0.1:8080/info/wall",
+        "headings": [
+          "壁",
+          "光を通さない固定の障害物です。光子の状態はここで吸収されます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/wall",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 壁",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/wall",
+        "actual": "http://127.0.0.1:8080/info/wall",
+        "headings": [
+          "壁",
+          "光を通さない固定の障害物です。光子の状態はここで吸収されます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → ゲート",
+        "from": "http://127.0.0.1:8080/info/wall",
+        "target": "/info/gate",
+        "actual": "http://127.0.0.1:8080/info/gate",
+        "headings": [
+          "ゲート",
+          "この版のシミュレーションでは、光を吸収する障害物として扱われます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/gate",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → ゲート",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/gate",
+        "actual": "http://127.0.0.1:8080/info/gate",
+        "headings": [
+          "ゲート",
+          "この版のシミュレーションでは、光を吸収する障害物として扱われます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → 非線形結晶",
+        "from": "http://127.0.0.1:8080/info/gate",
+        "target": "/info/non-linear-crystal",
+        "actual": "http://127.0.0.1:8080/info/non-linear-crystal",
+        "headings": [
+          "非線形結晶",
+          "この版では光の状態をそのまま通します。光子対の生成は実装されていません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/non-linear-crystal",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 非線形結晶",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/non-linear-crystal",
+        "actual": "http://127.0.0.1:8080/info/non-linear-crystal",
+        "headings": [
+          "非線形結晶",
+          "この版では光の状態をそのまま通します。光子対の生成は実装されていません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "側面リンク → マッハ・ツェンダー干渉計",
+        "from": "http://127.0.0.1:8080/info/non-linear-crystal",
+        "target": "/info/mach-zehnder-interferometer",
+        "actual": "http://127.0.0.1:8080/info/mach-zehnder-interferometer",
+        "headings": [
+          "マッハ・ツェンダー干渉計",
+          "2つのビームスプリッターと鏡で、分けた経路をもう一度重ねる例です。鏡やビームスプリッターの向きを変えて、出力先と検出確率の変化を観察しましょう。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/mach-zehnder-interferometer",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → マッハ・ツェンダー干渉計",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/mach-zehnder-interferometer",
+        "actual": "http://127.0.0.1:8080/info/mach-zehnder-interferometer",
+        "headings": [
+          "マッハ・ツェンダー干渉計",
+          "2つのビームスプリッターと鏡で、分けた経路をもう一度重ねる例です。鏡やビームスプリッターの向きを変えて、出力先と検出確率の変化を観察しましょう。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "側面リンク → 干渉",
+        "from": "http://127.0.0.1:8080/info/mach-zehnder-interferometer",
+        "target": "/info/interference",
+        "actual": "http://127.0.0.1:8080/info/interference",
+        "headings": [
+          "干渉",
+          "同じ出力状態へ到達する経路の振幅を足し合わせ、その絶対値の2乗から検出確率を求めます。位相の違いによって、振幅が強め合ったり打ち消し合ったりします。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/interference",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 干渉",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/interference",
+        "actual": "http://127.0.0.1:8080/info/interference",
+        "headings": [
+          "干渉",
+          "同じ出力状態へ到達する経路の振幅を足し合わせ、その絶対値の2乗から検出確率を求めます。位相の違いによって、振幅が強め合ったり打ち消し合ったりします。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "側面リンク → 重ね合わせ",
+        "from": "http://127.0.0.1:8080/info/interference",
+        "target": "/info/superposition",
+        "actual": "http://127.0.0.1:8080/info/superposition",
+        "headings": [
+          "重ね合わせ",
+          "ゲームでは、1個の光子の状態を経路ごとの複素振幅で表します。ビームスプリッターで複数の経路に状態が広がっても、光子が増えたわけではありません。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/superposition",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 重ね合わせ",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/superposition",
+        "actual": "http://127.0.0.1:8080/info/superposition",
+        "headings": [
+          "重ね合わせ",
+          "ゲームでは、1個の光子の状態を経路ごとの複素振幅で表します。ビームスプリッターで複数の経路に状態が広がっても、光子が増えたわけではありません。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "側面リンク → 光子源",
+        "from": "http://127.0.0.1:8080/info/superposition",
+        "target": "/info/laser",
+        "actual": "http://127.0.0.1:8080/info/laser",
+        "headings": [
+          "光子源",
+          "矢印の向きへ、指定した偏光の光子を送り出します。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "学習ページ → 一覧",
+        "from": "http://127.0.0.1:8080/info/laser",
+        "target": "/info",
+        "actual": "http://127.0.0.1:8080/info",
+        "headings": [
+          "光学部品",
+          "ゲームのしくみ"
+        ]
+      },
+      {
+        "label": "一覧 → 鏡",
+        "from": "http://127.0.0.1:8080/info",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/mirror",
+        "headings": [
+          "鏡",
+          "入ってきた光の進行方向を、鏡の向きに応じて変えます。クリックして向きを変え、反射先を確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → ログイン",
+        "from": "http://127.0.0.1:8080/info/mirror",
+        "target": "/login",
+        "actual": "http://127.0.0.1:8080/login",
+        "headings": [
+          "User Login"
+        ]
+      },
+      {
+        "label": "ログイン → 登録",
+        "from": "http://127.0.0.1:8080/login",
+        "target": "/register",
+        "actual": "http://127.0.0.1:8080/register",
+        "headings": [
+          "User Registration"
+        ]
+      },
+      {
+        "label": "登録 → ログイン",
+        "from": "http://127.0.0.1:8080/register",
+        "target": "/login",
+        "actual": "http://127.0.0.1:8080/login",
+        "headings": [
+          "User Login"
+        ]
+      },
+      {
+        "label": "戻る → 登録",
+        "actual": "http://127.0.0.1:8080/register"
+      },
+      {
+        "label": "進む → ログイン",
+        "actual": "http://127.0.0.1:8080/login"
+      },
+      {
+        "label": "アカウント → 保存済み一覧",
+        "from": "http://127.0.0.1:8080/myaccount",
+        "target": "/savedlevels",
+        "actual": "http://127.0.0.1:8080/savedlevels",
+        "headings": [
+          "Saved Levels"
+        ]
+      },
+      {
+        "label": "保存済み一覧 → 自由実験",
+        "from": "http://127.0.0.1:8080/savedlevels",
+        "target": "/lab",
+        "actual": "http://127.0.0.1:8080/lab",
+        "headings": [
+          "自由実験"
+        ]
+      },
+      {
+        "label": "自由実験の部品1 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/polarizer",
+        "headings": [
+          "偏光子",
+          "部品の透過軸に沿った偏光成分だけを通します。入力偏光と軸の角度によって、通過後の確率が変わります。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験",
+        "from": "http://127.0.0.1:8080/info/polarizer",
+        "target": "/lab",
+        "actual": "http://127.0.0.1:8080/lab",
+        "headings": [
+          "自由実験"
+        ]
+      },
+      {
+        "label": "鏡の説明 → 鏡の学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/corner-cube",
+        "headings": [
+          "コーナーキューブ",
+          "光を入ってきた方向へ折り返します。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "自由実験の部品1 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/mirror",
+        "headings": [
+          "鏡",
+          "入ってきた光の進行方向を、鏡の向きに応じて変えます。クリックして向きを変え、反射先を確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品2 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/beam-splitter",
+        "headings": [
+          "ビームスプリッター",
+          "入力した光の状態を透過と反射の経路へ分けます。標準設定では、それぞれの経路で検出される確率は半分です。光子が2個になるわけではありません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品3 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/polarizing-beam-splitter",
+        "actual": "http://127.0.0.1:8080/info/polarizing-beam-splitter",
+        "headings": [
+          "偏光ビームスプリッター",
+          "偏光によって進む経路を変えます。部品の向きと入力偏光を変え、透過・反射する成分を比べましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品4 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/corner-cube",
+        "actual": "http://127.0.0.1:8080/info/corner-cube",
+        "headings": [
+          "コーナーキューブ",
+          "光を入ってきた方向へ折り返します。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品5 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/detector",
+        "actual": "http://127.0.0.1:8080/info/detector",
+        "headings": [
+          "検出器",
+          "光子を検出して確率を表示します。この版の計算では向きによる選別はなく、全方向検出器と同じ吸収作用です。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品6 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/rock",
+        "actual": "http://127.0.0.1:8080/info/rock",
+        "headings": [
+          "岩",
+          "光子を吸収します。ここへ届いた成分は、その後の経路には進みません。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品7 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/mine",
+        "actual": "http://127.0.0.1:8080/info/mine",
+        "headings": [
+          "地雷",
+          "光子を吸収すると失敗につながる部品です。地雷での検出確率を抑えながら、目標の検出器へ導きましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品8 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/absorber",
+        "actual": "http://127.0.0.1:8080/info/absorber",
+        "headings": [
+          "吸収フィルター",
+          "通過する光の振幅を弱めます。標準設定では、通過後に残る確率は半分です。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品9 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/detector-four",
+        "actual": "http://127.0.0.1:8080/info/detector-four",
+        "headings": [
+          "全方向検出器",
+          "どの方向から来た光子も検出します。複数の経路から届いた結果を、この検出器で確かめられます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品10 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/polarizer",
+        "actual": "http://127.0.0.1:8080/info/polarizer",
+        "headings": [
+          "偏光子",
+          "部品の透過軸に沿った偏光成分だけを通します。入力偏光と軸の角度によって、通過後の確率が変わります。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品11 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/quarter-wave-plate",
+        "actual": "http://127.0.0.1:8080/info/quarter-wave-plate",
+        "headings": [
+          "¼波長板",
+          "2つの直交する偏光成分の間に、¼周期の位相差を与えます。入力と部品の向きによって、直線偏光と円偏光の変換を試せます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品12 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/half-wave-plate",
+        "actual": "http://127.0.0.1:8080/info/half-wave-plate",
+        "headings": [
+          "½波長板",
+          "2つの直交する偏光成分の間に、½周期の位相差を与えます。向きを変えて、出力の偏光がどう変わるか確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品13 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/sugar-solution",
+        "actual": "http://127.0.0.1:8080/info/sugar-solution",
+        "headings": [
+          "糖溶液",
+          "偏光の向きを回転させます。ゲームの標準設定では45°回転させます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品14 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/faraday-rotator",
+        "actual": "http://127.0.0.1:8080/info/faraday-rotator",
+        "headings": [
+          "ファラデー回転子",
+          "偏光を回転させる部品です。往復する光に対する作用を糖溶液と比べてみましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品15 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/glass",
+        "actual": "http://127.0.0.1:8080/info/glass",
+        "headings": [
+          "ガラス板",
+          "光の状態に¼周期の位相変化を与えます。単独の経路の確率ではなく、経路を重ねたときの干渉に注目しましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験の部品16 → 学習",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/info/vacuum-jar",
+        "actual": "http://127.0.0.1:8080/info/vacuum-jar",
+        "headings": [
+          "真空セル",
+          "ガラス板とは逆向きの¼周期の位相変化を与えます。経路を重ねたときの干渉を変えられます。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 自由実験（戻る）",
+        "actual": "http://127.0.0.1:8080/lab"
+      },
+      {
+        "label": "自由実験 → 一覧",
+        "from": "http://127.0.0.1:8080/lab",
+        "target": "/levels",
+        "actual": "http://127.0.0.1:8080/levels",
+        "headings": []
+      },
+      {
+        "label": "会話確認のステージ3",
+        "from": "http://127.0.0.1:8080/levels",
+        "target": "/level/3",
+        "actual": "http://127.0.0.1:8080/level/3",
+        "headings": [
+          "3 - ドラッグして配置"
+        ]
+      },
+      {
+        "label": "ステージ3 → 会話",
+        "from": "http://127.0.0.1:8080/level/3",
+        "target": "/rocks/mirror",
+        "actual": "http://127.0.0.1:8080/rocks/mirror",
+        "headings": []
+      },
+      {
+        "label": "会話 → 学習",
+        "from": "http://127.0.0.1:8080/rocks/mirror",
+        "target": "/info/mirror",
+        "actual": "http://127.0.0.1:8080/info/mirror",
+        "headings": [
+          "鏡",
+          "入ってきた光の進行方向を、鏡の向きに応じて変えます。クリックして向きを変え、反射先を確かめましょう。",
+          "操作方法",
+          "部品の作用を表す行列"
+        ]
+      },
+      {
+        "label": "学習 → 会話（戻る）",
+        "actual": "http://127.0.0.1:8080/rocks/mirror"
+      },
+      {
+        "label": "会話 → 次のステージ",
+        "from": "http://127.0.0.1:8080/rocks/mirror",
+        "target": "/level/4",
+        "actual": "http://127.0.0.1:8080/level/4",
+        "headings": [
+          "4 - 光の経路を分けよう"
+        ]
+      },
+      {
+        "label": "ゲーム → 一覧",
+        "from": "http://127.0.0.1:8080/level/4",
+        "target": "/levels",
+        "actual": "http://127.0.0.1:8080/levels",
+        "headings": []
+      },
+      {
+        "label": "会話確認のステージ4",
+        "from": "http://127.0.0.1:8080/levels",
+        "target": "/level/4",
+        "actual": "http://127.0.0.1:8080/level/4",
+        "headings": [
+          "4 - 光の経路を分けよう"
+        ]
+      },
+      {
+        "label": "ステージ4 → 会話",
+        "from": "http://127.0.0.1:8080/level/4",
+        "target": "/rocks/superposition",
+        "actual": "http://127.0.0.1:8080/rocks/superposition",
+        "headings": []
+      },
+      {
+        "label": "会話 → 学習",
+        "from": "http://127.0.0.1:8080/rocks/superposition",
+        "target": "/info/superposition",
+        "actual": "http://127.0.0.1:8080/info/superposition",
+        "headings": [
+          "重ね合わせ",
+          "ゲームでは、1個の光子の状態を経路ごとの複素振幅で表します。ビームスプリッターで複数の経路に状態が広がっても、光子が増えたわけではありません。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "学習 → 会話（戻る）",
+        "actual": "http://127.0.0.1:8080/rocks/superposition"
+      },
+      {
+        "label": "会話 → 次のステージ",
+        "from": "http://127.0.0.1:8080/rocks/superposition",
+        "target": "/level/5",
+        "actual": "http://127.0.0.1:8080/level/5",
+        "headings": [
+          "5 - 複数の経路に重ね合わせ"
+        ]
+      },
+      {
+        "label": "ゲーム → 一覧",
+        "from": "http://127.0.0.1:8080/level/5",
+        "target": "/levels",
+        "actual": "http://127.0.0.1:8080/levels",
+        "headings": []
+      },
+      {
+        "label": "会話確認のステージ6",
+        "from": "http://127.0.0.1:8080/levels",
+        "target": "/level/6",
+        "actual": "http://127.0.0.1:8080/level/6",
+        "headings": [
+          "6 - 干渉を見てみよう"
+        ]
+      },
+      {
+        "label": "ステージ6 → 会話",
+        "from": "http://127.0.0.1:8080/level/6",
+        "target": "/rocks/interference",
+        "actual": "http://127.0.0.1:8080/rocks/interference",
+        "headings": []
+      },
+      {
+        "label": "会話 → 学習",
+        "from": "http://127.0.0.1:8080/rocks/interference",
+        "target": "/info/interference",
+        "actual": "http://127.0.0.1:8080/info/interference",
+        "headings": [
+          "干渉",
+          "同じ出力状態へ到達する経路の振幅を足し合わせ、その絶対値の2乗から検出確率を求めます。位相の違いによって、振幅が強め合ったり打ち消し合ったりします。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "学習 → 会話（戻る）",
+        "actual": "http://127.0.0.1:8080/rocks/interference"
+      },
+      {
+        "label": "会話 → 次のステージ",
+        "from": "http://127.0.0.1:8080/rocks/interference",
+        "target": "/level/7",
+        "actual": "http://127.0.0.1:8080/level/7",
+        "headings": [
+          "7 - 干渉を変えよう"
+        ]
+      },
+      {
+        "label": "ゲーム → 一覧",
+        "from": "http://127.0.0.1:8080/level/7",
+        "target": "/levels",
+        "actual": "http://127.0.0.1:8080/levels",
+        "headings": []
+      },
+      {
+        "label": "会話確認のステージ7",
+        "from": "http://127.0.0.1:8080/levels",
+        "target": "/level/7",
+        "actual": "http://127.0.0.1:8080/level/7",
+        "headings": [
+          "7 - 干渉を変えよう"
+        ]
+      },
+      {
+        "label": "ステージ7 → 会話",
+        "from": "http://127.0.0.1:8080/level/7",
+        "target": "/rocks/mach-zehnder-interferometer",
+        "actual": "http://127.0.0.1:8080/rocks/mach-zehnder-interferometer",
+        "headings": []
+      },
+      {
+        "label": "会話 → 学習",
+        "from": "http://127.0.0.1:8080/rocks/mach-zehnder-interferometer",
+        "target": "/info/mach-zehnder-interferometer",
+        "actual": "http://127.0.0.1:8080/info/mach-zehnder-interferometer",
+        "headings": [
+          "マッハ・ツェンダー干渉計",
+          "2つのビームスプリッターと鏡で、分けた経路をもう一度重ねる例です。鏡やビームスプリッターの向きを変えて、出力先と検出確率の変化を観察しましょう。",
+          "操作方法"
+        ]
+      },
+      {
+        "label": "学習 → 会話（戻る）",
+        "actual": "http://127.0.0.1:8080/rocks/mach-zehnder-interferometer"
+      },
+      {
+        "label": "会話 → 次のステージ",
+        "from": "http://127.0.0.1:8080/rocks/mach-zehnder-interferometer",
+        "target": "/level/8",
+        "actual": "http://127.0.0.1:8080/level/8",
+        "headings": [
+          "8 - 干渉を導こう"
+        ]
+      },
+      {
+        "label": "ゲーム → 一覧",
+        "from": "http://127.0.0.1:8080/level/8",
+        "target": "/levels",
+        "actual": "http://127.0.0.1:8080/levels",
+        "headings": []
+      },
+      {
+        "label": "最終ステージ → 開く",
+        "from": "http://127.0.0.1:8080/levels",
+        "target": "/level/36",
+        "actual": "http://127.0.0.1:8080/level/36",
+        "headings": [
+          "36 - 小さな部品、大きな挑戦"
+        ]
+      },
+      {
+        "label": "最終ステージ → 会話",
+        "from": "http://127.0.0.1:8080/level/36",
+        "target": "/rocks/twitter",
+        "actual": "http://127.0.0.1:8080/rocks/twitter",
+        "headings": []
+      },
+      {
+        "label": "意図的な404 → ホーム",
+        "from": "http://127.0.0.1:8080/",
+        "target": "/",
+        "actual": "http://127.0.0.1:8080/",
+        "headings": [
+          "光子で遊ぶ量子パズル"
+        ]
+      },
+      {
+        "label": "ホーム → 自由実験",
+        "from": "http://127.0.0.1:8080/",
+        "target": "/lab",
+        "actual": "http://127.0.0.1:8080/lab",
+        "headings": [
+          "自由実験"
+        ]
+      }
+    ]
+  },
+  "automated": {
+    "command": "npm run test:navigation",
+    "result": "passed",
+    "resolved_routes": 77,
+    "learning_entries": 24,
+    "exits_per_learning_entry": 6,
+    "compiled_account_templates": 4,
+    "checks": [
+      "Stage identifiers and campaign indexes agree",
+      "All component and dialogue targets exist",
+      "Literal router links resolve",
+      "Learning article watcher never redirects when leaving for a valid page",
+      "Unknown articles still redirect to 404",
+      "Menus produce no null links for guest, lab or campaign states",
+      "Account templates use existing setup bindings",
+      "Existing physics, playback and translation checks"
+    ],
+    "typescript": "passed",
+    "eslint": "passed",
+    "production_build": "passed"
+  },
+  "corrections": [
+    "Hide campaign menu links when the current level is a lab and campaignLink returns null",
+    "Bind the account heading to userName",
+    "Replace the final dialogue Twitter link (404) with the verified original GitHub repository",
+    "Keep the toolbox explanation visible and delay hover changes while crossing tools; all 16 lab information links then reach the selected component"
+  ],
+  "external_http_checks": [
+    {
+      "url": "https://p.migdal.pl/",
+      "status": 200,
+      "final_url": "https://p.migdal.pl/"
+    },
+    {
+      "url": "http://jankiewiczstudio.com/",
+      "status": 200,
+      "final_url": "https://jankiewiczstudio.com/"
+    },
+    {
+      "url": "https://www.paweljanicki.jp/",
+      "status": 200,
+      "final_url": "https://www.paweljanicki.jp/"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Artur_Ekert",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Artur_Ekert"
+    },
+    {
+      "url": "https://www.quantumlah.org/",
+      "status": 200,
+      "final_url": "https://www.cqt.sg/"
+    },
+    {
+      "url": "https://www.quantumlah.org/about/highlight/2020-04-play-new-quantum-game",
+      "status": 200,
+      "final_url": "https://www.cqt.sg/highlight/2020-04-play-new-quantum-game/"
+    },
+    {
+      "url": "http://play.quantumgame.io/",
+      "status": 200,
+      "final_url": "https://play.quantumgame.io/"
+    },
+    {
+      "url": "https://medium.com/quantum-photons",
+      "status": 403,
+      "final_url": "https://medium.com/quantum-photons"
+    },
+    {
+      "url": "https://twitter.com/quantumgameio",
+      "status": 404,
+      "final_url": "https://x.com/quantumgameio"
+    },
+    {
+      "url": "https://github.com/mitarailab/quantum-game-2/commit/c4b4a1fc389f4cf699a5e95959a95f61a7a975c6",
+      "status": 200,
+      "final_url": "https://github.com/mitarailab/quantum-game-2/commit/c4b4a1fc389f4cf699a5e95959a95f61a7a975c6"
+    }
+  ],
+  "replacement_external_link": {
+    "url": "https://github.com/Quantum-Game/quantum-game-2",
+    "verification": "Successfully opened using the web tool"
+  },
+  "limits": [
+    "No credentials were entered and authenticated save/share/sign-out actions were not exercised",
+    "Medium returned 403 to the HTTP checker, but its page was readable with the web tool; this is not treated as a dead link"
+  ]
+}

@@ -15,7 +15,11 @@
         <div><IconHome /></div>
         <span>{{ $gameText('HOME') }}</span>
       </router-link>
-      <router-link v-if="currentLevel != null" :to="campaignLink(currentLevel)" class="nav-icon">
+      <router-link
+        v-if="campaignLink(currentLevel) != null"
+        :to="campaignLink(currentLevel)"
+        class="nav-icon"
+      >
         <div><IconGame /></div>
         <span>{{ $gameText('GAME') }}</span>
       </router-link>

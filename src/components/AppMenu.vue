@@ -3,7 +3,7 @@
     <div v-if="appMenuOpened" class="menu-overlay" flex layout="column">
       <menu layout="column around u1">
         <router-link to="/">{{ $gameText('BACK TO THE MAIN PAGE') }}</router-link>
-        <router-link v-if="currentLevel != null" :to="campaignLink(currentLevel)">{{
+        <router-link v-if="campaignLink(currentLevel) != null" :to="campaignLink(currentLevel)">{{
           $gameText('CONTINUE')
         }}</router-link>
         <router-link to="/levels">{{ $gameText('LEVELS') }}</router-link>
