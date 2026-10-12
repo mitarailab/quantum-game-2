@@ -1,0 +1,532 @@
+{
+  "checked_on": "2026-10-12",
+  "scope": "Image URLs embedded in generated encyclopedia JSON and local media files. Source markdown can contain additional images. No permissions inferred from URLs.",
+  "encyclopedia_images": [
+    {
+      "source": "https://media.githubusercontent.com/media/Quantum-Game/qg-encyclopedia/master/imgs/beam_splitter.jpg",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/beam-splitter/sections/2/content"
+      ],
+      "status": "requires-individual-license-check"
+    },
+    {
+      "source": "https://media.githubusercontent.com/media/Quantum-Game/qg-encyclopedia/master/imgs/mirror3a.jpg",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/mirror/sections/2/content"
+      ],
+      "status": "requires-individual-license-check"
+    },
+    {
+      "source": "https://media.githubusercontent.com/media/Quantum-Game/qg-encyclopedia/master/imgs/pbs.jpg",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/polarizing-beam-splitter/sections/1/content"
+      ],
+      "status": "requires-individual-license-check"
+    },
+    {
+      "source": "https://media.githubusercontent.com/media/Quantum-Game/qg-encyclopedia/master/imgs/polarizer.jpg",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/polarizer/sections/2/content"
+      ],
+      "status": "requires-individual-license-check"
+    },
+    {
+      "source": "https://s3-eu1.ixquick.com/cgi-bin/serveimage?url=https:%2F%2Fqph.fs.quoracdn.net%2Fmain-qimg-de848af8d44207b6a19458c340dc99c0.webp&sp=924c33fd7d8a6f5bf074f3028fe1610b",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/sugar-solution/sections/0/content"
+      ],
+      "status": "requires-individual-license-check"
+    },
+    {
+      "source": "https://scx2.b-cdn.net/gfx/news/hires/2016/thesuperkami.jpg",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/detector/sections/3/content"
+      ],
+      "status": "requires-individual-license-check"
+    },
+    {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Image-Metal-reflectance.png",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/mirror/sections/2/content"
+      ],
+      "status": "source-license-identified; attribution-and-version-verification-pending",
+      "author": "Bob Mellish / DrBob",
+      "license": "CC-BY-SA-3.0 OR GFDL-1.2-or-later",
+      "license_source": "https://commons.wikimedia.org/wiki/File:Image-Metal-reflectance.png"
+    },
+    {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sunscreen_on_back_under_normal_and_UV_light.jpg/640px-Sunscreen_on_back_under_normal_and_UV_light.jpg",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/absorber/sections/0/content"
+      ],
+      "status": "source-license-identified; attribution-and-version-verification-pending",
+      "author": "Andrew Steele; subject HYanWong",
+      "license": "CC0-1.0",
+      "license_source": "https://commons.wikimedia.org/wiki/File:Sunscreen_on_back_under_normal_and_UV_light.jpg"
+    },
+    {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Circular.Polarization.Circularly.Polarized.Light_Circular.Polarizer_Creating.Left.Handed.Helix.View.svg/1280px-Circular.Polarization.Circularly.Polarized.Light_Circular.Polarizer_Creating.Left.Handed.Helix.View.svg.png",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/quarter-wave-plate/sections/0/content"
+      ],
+      "status": "source-license-identified; attribution-and-version-verification-pending",
+      "author": "Dave3457",
+      "license": "Public domain",
+      "license_source": "https://commons.wikimedia.org/wiki/File:Circular.Polarization.Circularly.Polarized.Light_Circular.Polarizer_Creating.Left.Handed.Helix.View.svg"
+    },
+    {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Wire-grid-polarizer.svg/1280px-Wire-grid-polarizer.svg.png",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/polarizer/sections/0/content"
+      ],
+      "status": "source-license-identified; attribution-and-version-verification-pending",
+      "author": "Bob Mellish",
+      "license": "CC-BY-SA-3.0 OR GFDL-1.2-or-later",
+      "license_source": "https://commons.wikimedia.org/wiki/File:Wire-grid-polarizer.svg"
+    },
+    {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/CircularPolarizer.jpg/1920px-CircularPolarizer.jpg",
+      "references": [
+        "src/assets/data/encyclopedia/elements.json/polarizer/sections/1/content"
+      ],
+      "status": "source-license-identified; attribution-and-version-verification-pending",
+      "author": "PiccoloNamek",
+      "license": "CC-BY-SA-3.0 OR GFDL-1.2-or-later",
+      "license_source": "https://commons.wikimedia.org/wiki/File:CircularPolarizer.jpg"
+    }
+  ],
+  "local_media": [
+    {
+      "path": "src/assets/faces/james_wootton.jpg",
+      "review": "portrait-permission-review"
+    },
+    {
+      "path": "src/assets/faces/monika_schleier_smith.jpg",
+      "review": "portrait-permission-review"
+    },
+    {
+      "path": "src/assets/faces/scott_aaronson.jpg",
+      "review": "portrait-permission-review"
+    },
+    {
+      "path": "src/assets/graphics/CQT_NUS_Logo_mono.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/QG_logo.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/account.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/account_register.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/detectorEmpty-2.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/detectorEmpty.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/detectorFull-2.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/detectorFull.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/download.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/fast_forward.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/icon_experiment.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/icon_laser.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/icon_wave.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/key.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/key_concept.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/map.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/menu_encyclopedia.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/menu_game.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/menu_home.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/menu_lab.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/menu_levels.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/mineEmpty-2.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/mineEmpty.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/mineFull-2.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/mineFull.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/nextLevel.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/options.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/orig_classical.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/orig_multiverse.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/orig_quantum.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/orig_save.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/orig_step_back.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/orig_step_forward.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/orig_stop.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/pause.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/play.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/previousLevel.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/reload.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/rewind.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/save.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/skip_back.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/skip_forward.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/sound_off.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/sound_on.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/toggle_left.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/toggle_right.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/icons/upload.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/pile.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/pile2.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_curious.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_devastated.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_drink.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_error.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_happy.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_sad.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_scared.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_sceptical.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_talk_line.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/rock_worried.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/overlays/weasel.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/peeking_weasel.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/placeholder_encyclopedia.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/rock_weasel.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/graphics/test_board_en.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/beam_splitter.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/camera.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/camera2.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/detector.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/detector_polarization.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/half_wave_plate.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/lab_more.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/lab_more2.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/lab_more3.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/mirror.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/mirror2.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/mirror3a.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/mirror3b.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/nd_filter.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/parametric_downconversion_cone.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/pbs.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/pbs2.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/pbs3.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/phase_plate.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/polarization_cup.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/polarizer.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/polarizer2.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "src/assets/qg-encyclopedia/imgs/polarizer_cube.jpg",
+      "review": "encyclopedia-individual-license"
+    },
+    {
+      "path": "public/favicon.ico",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/android-chrome-192x192.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/android-chrome-512x512.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/apple-touch-icon-120x120.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/apple-touch-icon-152x152.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/apple-touch-icon-180x180.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/apple-touch-icon-60x60.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/apple-touch-icon-76x76.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/apple-touch-icon.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/favicon-16x16.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/favicon-32x32.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/msapplication-icon-144x144.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/mstile-150x150.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/icons/safari-pinned-tab.svg",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/qg2_logo.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/qg2_social_media_logo.png",
+      "review": "root-MIT-scope-and-branding-review"
+    },
+    {
+      "path": "public/img/qg2_social_media_screenshot.png",
+      "review": "root-MIT-scope-and-branding-review"
+    }
+  ]
+}

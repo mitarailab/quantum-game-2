@@ -1,0 +1,812 @@
+{
+  "scope": "Direct dependencies only; registry metadata is not a distribution notice or a transitive audit.",
+  "checked_on": "2026-10-12",
+  "packages": [
+    {
+      "name": "@fortawesome/fontawesome-free",
+      "requested": "^5.15.1",
+      "version": "5.15.1",
+      "group": "dependencies",
+      "license": "(CC-BY-4.0 AND OFL-1.1 AND MIT)",
+      "repository": {
+        "url": "git+https://github.com/FortAwesome/Font-Awesome.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/%40fortawesome%2Ffontawesome-free/5.15.1",
+      "tarball": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.1.tgz",
+      "integrity": "sha512-OEdH7SyC1suTdhBGW91/zBfR6qaIhThbcN8PUXtXilY4GYnSBbVqOntdHbC1vXwsDnX0Qix2m2+DSU1J51ybOQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@tweenjs/tween.js",
+      "requested": "^18.6.0",
+      "version": "18.6.0",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/tweenjs/tween.js.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/%40tweenjs%2Ftween.js/18.6.0",
+      "tarball": "https://registry.npmjs.org/@tweenjs/tween.js/-/tween.js-18.6.0.tgz",
+      "integrity": "sha512-z45HU0G0e/SenbvGdAlTpUR5Hur5zwZXQcqfI+f7EnVHdeb2oMI2rQghEePu7uXuvBC0nuKWG5YtZ1nWbuvqzQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@types/d3-array",
+      "requested": "^2.2.0",
+      "version": "2.2.0",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/d3-array"
+      },
+      "source": "https://registry.npmjs.org/%40types%2Fd3-array/2.2.0",
+      "tarball": "https://registry.npmjs.org/@types/d3-array/-/d3-array-2.2.0.tgz",
+      "integrity": "sha512-mtGpI5bDyjqVvDh21RIJjg3jl9JbxT1JSgmshssohtZotlmLH2FLjkONWhNDZjs4vCa0lShBmOBkGL/iCtxM5Q==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@types/d3-scale",
+      "requested": "^3.1.0",
+      "version": "3.1.0",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/d3-scale"
+      },
+      "source": "https://registry.npmjs.org/%40types%2Fd3-scale/3.1.0",
+      "tarball": "https://registry.npmjs.org/@types/d3-scale/-/d3-scale-3.1.0.tgz",
+      "integrity": "sha512-6dXLb03fKXGQueAV50DSsYojBd2w1cSgBHNV2VQa5ScxhQqUy6yEtlukdbV8qyTORA9KLHHSu7hCNUQquYg5GQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@types/d3-scale-chromatic",
+      "requested": "^2.0.0",
+      "version": "2.0.0",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/d3-scale-chromatic"
+      },
+      "source": "https://registry.npmjs.org/%40types%2Fd3-scale-chromatic/2.0.0",
+      "tarball": "https://registry.npmjs.org/@types/d3-scale-chromatic/-/d3-scale-chromatic-2.0.0.tgz",
+      "integrity": "sha512-Y62+2clOwZoKua84Ha0xU77w7lePiaBoTjXugT4l8Rd5LAk+Mn/ZDtrgs087a+B5uJ3jYUHHtKw5nuEzp0WBHw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@types/lodash",
+      "requested": "^4.14.162",
+      "version": "4.14.162",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/lodash"
+      },
+      "source": "https://registry.npmjs.org/%40types%2Flodash/4.14.162",
+      "tarball": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.162.tgz",
+      "integrity": "sha512-alvcho1kRUnnD1Gcl4J+hK0eencvzq9rmzvFPRmP5rPHx9VVsJj6bKLTATPVf9ktgv4ujzh7T+XWKp+jhuODig==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "bra-ket-vue",
+      "requested": "^0.4.2",
+      "version": "0.4.2",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/Quantum-Game/bra-ket-vue",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/bra-ket-vue/0.4.2",
+      "tarball": "https://registry.npmjs.org/bra-ket-vue/-/bra-ket-vue-0.4.2.tgz",
+      "integrity": "sha512-6IQuHVEWCShb23bLOdH7kUesuQrc+xPcJvzUb5d85zGSGcW/hRrNcd29kBvgzXaKLZv4qFht3bOwQvJ6Z5Ll3A==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "core-js",
+      "requested": "^3.6.5",
+      "version": "3.6.5",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/zloirock/core-js.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/core-js/3.6.5",
+      "tarball": "https://registry.npmjs.org/core-js/-/core-js-3.6.5.tgz",
+      "integrity": "sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "d3-array",
+      "requested": "^2.8.0",
+      "version": "2.8.0",
+      "group": "dependencies",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "url": "git+https://github.com/d3/d3-array.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/d3-array/2.8.0",
+      "tarball": "https://registry.npmjs.org/d3-array/-/d3-array-2.8.0.tgz",
+      "integrity": "sha512-6V272gsOeg7+9pTW1jSYOR1QE37g95I3my1hBmY+vOUNHRrk9yt4OTz/gK7PMkVAVDrYYq4mq3grTiZ8iJdNIw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "d3-scale",
+      "requested": "^3.2.3",
+      "version": "3.2.3",
+      "group": "dependencies",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "url": "git+https://github.com/d3/d3-scale.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/d3-scale/3.2.3",
+      "tarball": "https://registry.npmjs.org/d3-scale/-/d3-scale-3.2.3.tgz",
+      "integrity": "sha512-8E37oWEmEzj57bHcnjPVOBS3n4jqakOeuv1EDdQSiSrYnMCBdMd3nc4HtKk7uia8DUHcY/CGuJ42xxgtEYrX0g==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "d3-scale-chromatic",
+      "requested": "^2.0.0",
+      "version": "2.0.0",
+      "group": "dependencies",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "url": "https://github.com/d3/d3-scale-chromatic.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/d3-scale-chromatic/2.0.0",
+      "tarball": "https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-2.0.0.tgz",
+      "integrity": "sha512-LLqy7dJSL8yDy7NRmf6xSlsFZ6zYvJ4BcWFE4zBrOPnQERv9zj24ohnXKRbyi9YHnYV+HN1oEO3iFK971/gkzA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "firebase",
+      "requested": "^7.23.0",
+      "version": "7.23.0",
+      "group": "dependencies",
+      "license": "Apache-2.0",
+      "repository": {
+        "url": "git+https://github.com/firebase/firebase-js-sdk.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/firebase/7.23.0",
+      "tarball": "https://registry.npmjs.org/firebase/-/firebase-7.23.0.tgz",
+      "integrity": "sha512-0b1zi0H8jT4KqyPabldzPhyKTeptw5E5a7KkjWW3MBMVV/LjbC6/NKhRR8sGQNbsbS2LnTvyEENWbqkZP2ZXtw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "include-media",
+      "requested": "^1.4.9",
+      "version": "1.4.9",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/eduardoboucas/include-media.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/include-media/1.4.9",
+      "tarball": "https://registry.npmjs.org/include-media/-/include-media-1.4.9.tgz",
+      "integrity": "sha512-IUOcvWDCt6R5V0ktsGk6RbehkW9ks1dODN2ed1p+mhML82TteAl+/ElXy8AJ7ueIuVoKq2NioRVdW9FuwQNOew==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "lodash",
+      "requested": "^4.17.20",
+      "version": "4.17.20",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/lodash/lodash.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/lodash/4.17.20",
+      "tarball": "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz",
+      "integrity": "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "quantum-tensors",
+      "requested": "^0.4.13",
+      "version": "0.4.13",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/Quantum-Game/quantum-tensors",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/quantum-tensors/0.4.13",
+      "tarball": "https://registry.npmjs.org/quantum-tensors/-/quantum-tensors-0.4.13.tgz",
+      "integrity": "sha512-6+keK02uBXWAXcYWdpnDzJKOK3IhaL3DaWEF/6ZdaJ391smfIIfevtzFAbknxq1cgRT8GVSpEyh+In1k+sUurQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "register-service-worker",
+      "requested": "^1.7.1",
+      "version": "1.7.1",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/yyx990803/register-service-worker.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/register-service-worker/1.7.1",
+      "tarball": "https://registry.npmjs.org/register-service-worker/-/register-service-worker-1.7.1.tgz",
+      "integrity": "sha512-IdTfUZ4u8iJL8o1w8es8l6UMGPmkwHolUdT+UmM1UypC80IB4KbpuIlvwWVj8UDS7eJwkEYRcKRgfRX+oTmJsw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "tone",
+      "requested": "^14.7.58",
+      "version": "14.7.58",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/Tonejs/Tone.js.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/tone/14.7.58",
+      "tarball": "https://registry.npmjs.org/tone/-/tone-14.7.58.tgz",
+      "integrity": "sha512-OzXsCkmaU/tLcNBc4M4dzHAjBzUGm+29DbWmAkAcCvpzWkLqo61RTcJa8tmS63F/7JHPiAJEOpuInMXw3mCvIg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "vue",
+      "requested": "^3.0.0",
+      "version": "3.0.0",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vue-next.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/vue/3.0.0",
+      "tarball": "https://registry.npmjs.org/vue/-/vue-3.0.0.tgz",
+      "integrity": "sha512-ZMrAARZ32sGIaYKr7Fk2GZEBh/VhulSrGxcGBiAvbN4fhjl3tuJyNFbbbLFqGjndbLoBW66I2ECq8ICdvkKdJw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "vue-confetti",
+      "requested": "^2.2.1",
+      "version": "2.2.1",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/alexandermendes/vue-confetti.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/vue-confetti/2.2.1",
+      "tarball": "https://registry.npmjs.org/vue-confetti/-/vue-confetti-2.2.1.tgz",
+      "integrity": "sha512-yWDb21phC9jQtdjBi9r40UCTnBG1IEu9VuZUaoTSlDao4RwRJEb+rCKa5qWUkzwGZViwJGguEWFWCw9I2V/bQw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "vue-i18n",
+      "requested": "^9.0.0-beta",
+      "version": "9.0.0-beta.4",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/intlify/vue-i18n-next.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/vue-i18n/9.0.0-beta.4",
+      "tarball": "https://registry.npmjs.org/vue-i18n/-/vue-i18n-9.0.0-beta.4.tgz",
+      "integrity": "sha512-Ko1pNflNRwmwjVn2S4Oo9BGHzBRVBvBGdBzAKle713DmmFRnB+NnsJisSmwTqB6BtACCvvJdY+xRTjZaobHtew==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "vue-router",
+      "requested": "^4.0.0-beta",
+      "version": "4.0.0-beta.13",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": null,
+      "source": "https://registry.npmjs.org/vue-router/4.0.0-beta.13",
+      "tarball": "https://registry.npmjs.org/vue-router/-/vue-router-4.0.0-beta.13.tgz",
+      "integrity": "sha512-dYv9qpHPaojQlfujViiTkPkf1Bf5RCFzkCkdVFc1cENzWJYAGJanpIHiyjyKoM4u7IDFBZMItci+U4ieaEWA8A==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "vuex",
+      "requested": "^4.0.0-beta",
+      "version": "4.0.0-beta.4",
+      "group": "dependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vuex.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/vuex/4.0.0-beta.4",
+      "tarball": "https://registry.npmjs.org/vuex/-/vuex-4.0.0-beta.4.tgz",
+      "integrity": "sha512-/+4E1dokq5cwbl4mohOqOj8h0vOLOWmLSqlqTf++bfmN9/JKWtwYfsBrzlK0sYrNfuYcpQeX0BVxQHoHXDfYZQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@types/jest",
+      "requested": "^26.0.14",
+      "version": "26.0.14",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/jest"
+      },
+      "source": "https://registry.npmjs.org/%40types%2Fjest/26.0.14",
+      "tarball": "https://registry.npmjs.org/@types/jest/-/jest-26.0.14.tgz",
+      "integrity": "sha512-Hz5q8Vu0D288x3iWXePSn53W7hAjP0H7EQ6QvDO9c7t46mR0lNOLlfuwQ+JkVxuhygHzlzPX+0jKdA3ZgSh+Vg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@types/markdown-it",
+      "requested": "^10.0.2",
+      "version": "10.0.2",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/markdown-it"
+      },
+      "source": "https://registry.npmjs.org/%40types%2Fmarkdown-it/10.0.2",
+      "tarball": "https://registry.npmjs.org/@types/markdown-it/-/markdown-it-10.0.2.tgz",
+      "integrity": "sha512-FGKiVW1UgeIEAChYAuHcfCd0W4LsMEyrSyTVaZiuJhwR4BwSVUD8JKnzmWAMK2FHNLZSPGUaEkpa/dkZj2uq1w==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "requested": "^4.4.1",
+      "version": "4.4.1",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/typescript-eslint/typescript-eslint.git",
+        "type": "git",
+        "directory": "packages/eslint-plugin"
+      },
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Feslint-plugin/4.4.1",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.4.1.tgz",
+      "integrity": "sha512-O+8Utz8pb4OmcA+Nfi5THQnQpHSD2sDUNw9AxNHpuYOo326HZTtG8gsfT+EAYuVrFNaLyNb2QnUNkmTRDskuRA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "requested": "^4.4.1",
+      "version": "4.4.1",
+      "group": "devDependencies",
+      "license": "BSD-2-Clause",
+      "repository": {
+        "url": "git+https://github.com/typescript-eslint/typescript-eslint.git",
+        "type": "git",
+        "directory": "packages/parser"
+      },
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Fparser/4.4.1",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-4.4.1.tgz",
+      "integrity": "sha512-S0fuX5lDku28Au9REYUsV+hdJpW/rNW0gWlc4SXzF/kdrRaAVX9YCxKpziH7djeWT/HFAjLZcnY7NJD8xTeUEg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/cli-plugin-babel",
+      "requested": "~4.5.7",
+      "version": "4.5.7",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vue-cli.git",
+        "type": "git",
+        "directory": "packages/@vue/cli-plugin-babel"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Fcli-plugin-babel/4.5.7",
+      "tarball": "https://registry.npmjs.org/@vue/cli-plugin-babel/-/cli-plugin-babel-4.5.7.tgz",
+      "integrity": "sha512-cqtHoXWHxtMj8qyN0A2TvFRuEQsqtDlYeKaOT1XDwbfHZwWXlD4BBsqXZBnqQkQI0hijMOA0QOnqA63/x0lpMg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/cli-plugin-eslint",
+      "requested": "~4.5.7",
+      "version": "4.5.7",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vue-cli.git",
+        "type": "git",
+        "directory": "packages/@vue/cli-plugin-eslint"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Fcli-plugin-eslint/4.5.7",
+      "tarball": "https://registry.npmjs.org/@vue/cli-plugin-eslint/-/cli-plugin-eslint-4.5.7.tgz",
+      "integrity": "sha512-6fWob1xh2W0uif2++YhNiBWITDBsAEktdgnLRgIgM/UqUg9oFpz9tqs0i85PQwjUDIn/erMT2ID3hnOncYTxxQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/cli-plugin-pwa",
+      "requested": "^4.5.7",
+      "version": "4.5.7",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vue-cli.git",
+        "type": "git",
+        "directory": "packages/@vue/cli-plugin-pwa"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Fcli-plugin-pwa/4.5.7",
+      "tarball": "https://registry.npmjs.org/@vue/cli-plugin-pwa/-/cli-plugin-pwa-4.5.7.tgz",
+      "integrity": "sha512-mOaEgoLCT2yE8Pdvlz8LhXKqIs3w4xJjDr2dLrOrxh0+OhSpOHJdJ3yHswlgvkxgg0/FGS6t8haj0DfInQ+fYg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/cli-plugin-typescript",
+      "requested": "^4.5.7",
+      "version": "4.5.7",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vue-cli.git",
+        "type": "git",
+        "directory": "packages/@vue/cli-plugin-typescript"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Fcli-plugin-typescript/4.5.7",
+      "tarball": "https://registry.npmjs.org/@vue/cli-plugin-typescript/-/cli-plugin-typescript-4.5.7.tgz",
+      "integrity": "sha512-QXcJwFKxB3DYcZCc0FeobvxPeo4QH42DpZrEJqPDhtpmKKDh+TAD+FHfRtY5t0JYmDOKPw4hppucB0G6TWqdFg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/cli-service",
+      "requested": "~4.5.7",
+      "version": "4.5.7",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vue-cli.git",
+        "type": "git",
+        "directory": "packages/@vue/cli-service"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Fcli-service/4.5.7",
+      "tarball": "https://registry.npmjs.org/@vue/cli-service/-/cli-service-4.5.7.tgz",
+      "integrity": "sha512-iT5wb5JbF/kbJCY7HR8qabWEiaMvZP4/KPezsnEp/6vNGAF0Akx0FGvCuU9sm7uf6w0UKzIJ38I6JJBtkOMvJA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/compiler-sfc",
+      "requested": "^3.0.0",
+      "version": "3.0.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/vue-next.git",
+        "type": "git",
+        "directory": "packages/compiler-sfc"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Fcompiler-sfc/3.0.0",
+      "tarball": "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.0.0.tgz",
+      "integrity": "sha512-1Bn4L5jNRm6tlb79YwqYUGGe+Yc9PRoRSJi67NJX6icdhf84+tRMtESbx1zCLL9QixQXu2+7aLkXHxvh4RpqAA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/eslint-config-prettier",
+      "requested": "^6.0.0",
+      "version": "6.0.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/eslint-config-prettier.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Feslint-config-prettier/6.0.0",
+      "tarball": "https://registry.npmjs.org/@vue/eslint-config-prettier/-/eslint-config-prettier-6.0.0.tgz",
+      "integrity": "sha512-wFQmv45c3ige5EA+ngijq40YpVcIkAy0Lihupnsnd1Dao5CBbPyfCzqtejFLZX1EwH/kCJdpz3t6s+5wd3+KxQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/eslint-config-standard",
+      "requested": "^5.1.2",
+      "version": "5.1.2",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/eslint-config-standard.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Feslint-config-standard/5.1.2",
+      "tarball": "https://registry.npmjs.org/@vue/eslint-config-standard/-/eslint-config-standard-5.1.2.tgz",
+      "integrity": "sha512-FTz0k77dIrj9r3xskt9jsZyL/YprrLiPRf4m3k7G6dZ5PKuD6OPqYrHR9eduUmHDFpTlRgFpTVQrq+1el9k3QQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "@vue/eslint-config-typescript",
+      "requested": "^7.0.0",
+      "version": "7.0.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/eslint-config-typescript.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/%40vue%2Feslint-config-typescript/7.0.0",
+      "tarball": "https://registry.npmjs.org/@vue/eslint-config-typescript/-/eslint-config-typescript-7.0.0.tgz",
+      "integrity": "sha512-UxUlvpSrFOoF8aQ+zX1leYiEBEm7CZmXYn/ZEM1zwSadUzpamx56RB4+Htdjisv1mX2tOjBegNUqH3kz2OL+Aw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "babel-eslint",
+      "requested": "^10.1.0",
+      "version": "10.1.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/babel/babel-eslint.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/babel-eslint/10.1.0",
+      "tarball": "https://registry.npmjs.org/babel-eslint/-/babel-eslint-10.1.0.tgz",
+      "integrity": "sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint",
+      "requested": "^7.11.0",
+      "version": "7.11.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/eslint/eslint.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint/7.11.0",
+      "tarball": "https://registry.npmjs.org/eslint/-/eslint-7.11.0.tgz",
+      "integrity": "sha512-G9+qtYVCHaDi1ZuWzBsOWo2wSwd70TXnU6UHA3cTYHp7gCTXZcpggWFoUVAMRarg68qtPoNfFbzPh+VdOgmwmw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint-plugin-import",
+      "requested": "^2.22.1",
+      "version": "2.22.1",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/benmosher/eslint-plugin-import.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint-plugin-import/2.22.1",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz",
+      "integrity": "sha512-8K7JjINHOpH64ozkAhpT3sd+FswIZTfMZTjdx052pnWrgRCVfp8op9tbjpAk3DdUeI/Ba4C8OjdC0r90erHEOw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint-plugin-node",
+      "requested": "^11.1.0",
+      "version": "11.1.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/mysticatea/eslint-plugin-node.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint-plugin-node/11.1.0",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-node/-/eslint-plugin-node-11.1.0.tgz",
+      "integrity": "sha512-oUwtPJ1W0SKD0Tr+wqu92c5xuCeQqB3hSCHasn/ZgjFdA9iDGNkNf2Zi9ztY7X+hNuMib23LNGRm6+uN+KLE3g==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint-plugin-prettier",
+      "requested": "^3.1.4",
+      "version": "3.1.4",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/prettier/eslint-plugin-prettier.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint-plugin-prettier/3.1.4",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.4.tgz",
+      "integrity": "sha512-jZDa8z76klRqo+TdGDTFJSavwbnWK2ZpqGKNZ+VvweMW516pDUMmQ2koXvxEE4JhzNvTv+radye/bWGBmA6jmg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint-plugin-promise",
+      "requested": "^4.2.1",
+      "version": "4.2.1",
+      "group": "devDependencies",
+      "license": "ISC",
+      "repository": {
+        "url": "git+ssh://git@github.com/xjamundx/eslint-plugin-promise.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint-plugin-promise/4.2.1",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz",
+      "integrity": "sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint-plugin-standard",
+      "requested": "^4.0.1",
+      "version": "4.0.1",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/standard/eslint-plugin-standard.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint-plugin-standard/4.0.1",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-standard/-/eslint-plugin-standard-4.0.1.tgz",
+      "integrity": "sha512-v/KBnfyaOMPmZc/dmc6ozOdWqekGp7bBGq4jLAecEfPGmfKiWS4sA8sC0LqiV9w5qmXAtXVn4M3p1jSyhY85SQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint-plugin-vue",
+      "requested": "^7.0.1",
+      "version": "7.0.1",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/vuejs/eslint-plugin-vue.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint-plugin-vue/7.0.1",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-vue/-/eslint-plugin-vue-7.0.1.tgz",
+      "integrity": "sha512-Pzl88S8Gue9BPcvSg+K/Av2V5UlwGeBxiZW5cLYbDngHm7vLnSuO/q2n54kIyCqfPmuD5PKlJrNSzoN+Ur9HRg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "eslint-plugin-vue-scoped-css",
+      "requested": "^1.0.0",
+      "version": "1.0.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/future-architect/eslint-plugin-vue-scoped-css.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/eslint-plugin-vue-scoped-css/1.0.0",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-vue-scoped-css/-/eslint-plugin-vue-scoped-css-1.0.0.tgz",
+      "integrity": "sha512-4C51QYYWVnxwmg3k6h7BouRedPmxYXt/Dijiwo6KMnYwGire8bR0dbhWZv+jtZsW+6RtN9Fq+zZdH/nQmAe4WA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "jest",
+      "requested": "^26.5.3",
+      "version": "26.5.3",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/facebook/jest.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/jest/26.5.3",
+      "tarball": "https://registry.npmjs.org/jest/-/jest-26.5.3.tgz",
+      "integrity": "sha512-uJi3FuVSLmkZrWvaDyaVTZGLL8WcfynbRnFXyAHuEtYiSZ+ijDDIMOw1ytmftK+y/+OdAtsG9QrtbF7WIBmOyA==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "last-commit-log",
+      "requested": "^3.0.4",
+      "version": "3.0.4",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/node-modules/last-commit-log.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/last-commit-log/3.0.4",
+      "tarball": "https://registry.npmjs.org/last-commit-log/-/last-commit-log-3.0.4.tgz",
+      "integrity": "sha512-NwvGT6O3eiOIALwxa/i1YcVgQuLO7w/KheP3wORmB2JM9IaG47PbkSAn2BZMa8Z8hkPYblY+awD4lFjHFFsQ9g==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "markdown-it",
+      "requested": "^11.0.1",
+      "version": "11.0.1",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/markdown-it/markdown-it.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/markdown-it/11.0.1",
+      "tarball": "https://registry.npmjs.org/markdown-it/-/markdown-it-11.0.1.tgz",
+      "integrity": "sha512-aU1TzmBKcWNNYvH9pjq6u92BML+Hz3h5S/QpfTFwiQF852pLT+9qHsrhM9JYipkOXZxGn+sGH8oyJE9FD9WezQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "node-sass",
+      "requested": "^4.14.1",
+      "version": "4.14.1",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/sass/node-sass.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/node-sass/4.14.1",
+      "tarball": "https://registry.npmjs.org/node-sass/-/node-sass-4.14.1.tgz",
+      "integrity": "sha512-sjCuOlvGyCJS40R8BscF5vhVlQjNN069NtQ1gSxyK1u9iqvn6tf7O1R4GNowVZfiZUCRt5MmMs1xd+4V/7Yr0g==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "prettier",
+      "requested": "^2.1.2",
+      "version": "2.1.2",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/prettier/prettier.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/prettier/2.1.2",
+      "tarball": "https://registry.npmjs.org/prettier/-/prettier-2.1.2.tgz",
+      "integrity": "sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "sass-loader",
+      "requested": "^10.0.3",
+      "version": "10.0.3",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/webpack-contrib/sass-loader.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/sass-loader/10.0.3",
+      "tarball": "https://registry.npmjs.org/sass-loader/-/sass-loader-10.0.3.tgz",
+      "integrity": "sha512-W4+FV5oUdYy0PnC11ZoPrcAexODgDCa3ngxoy5X5qBhZYoPz9FPjb6Oox8Aa0ZYEyx34k8AQfOVuvqefOSAAUQ==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "ts-node",
+      "requested": "^9.0.0",
+      "version": "9.0.0",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git://github.com/TypeStrong/ts-node.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/ts-node/9.0.0",
+      "tarball": "https://registry.npmjs.org/ts-node/-/ts-node-9.0.0.tgz",
+      "integrity": "sha512-/TqB4SnererCDR/vb4S/QvSZvzQMJN8daAslg7MeaiHvD8rDZsSfXmNeNumyZZzMned72Xoq/isQljYSt8Ynfg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "typescript",
+      "requested": "^4.0.3",
+      "version": "4.0.3",
+      "group": "devDependencies",
+      "license": "Apache-2.0",
+      "repository": {
+        "url": "git+https://github.com/Microsoft/TypeScript.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/typescript/4.0.3",
+      "tarball": "https://registry.npmjs.org/typescript/-/typescript-4.0.3.tgz",
+      "integrity": "sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==",
+      "status": "metadata-only"
+    },
+    {
+      "name": "vue-svg-loader",
+      "requested": "^0.17.0-beta.2",
+      "version": "0.17.0-beta.2",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/visualfanatic/vue-svg-loader.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/vue-svg-loader/0.17.0-beta.2",
+      "tarball": "https://registry.npmjs.org/vue-svg-loader/-/vue-svg-loader-0.17.0-beta.2.tgz",
+      "integrity": "sha512-iMUGJTKEcuNAG8VXOchjA8443IqEmEi2Aw6EVIHWma2cC4TUQ7Oet5Yry9IFfqXQXXvyzXz5EyttVvfRGTNH4Q==",
+      "status": "metadata-only"
+    }
+  ]
+}

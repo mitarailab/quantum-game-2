@@ -1,5 +1,26 @@
 # Quantum Game 2
 
+## Mitarai Lab 日本語版の開発
+
+このフォークは [mitarailab/quantum-game-2](https://github.com/mitarailab/quantum-game-2) で開発します。
+研究室HPのリポジトリとは独立して管理し、日本語化と公開準備を `japanese` ブランチで進めます。
+上流は [Quantum-Game/quantum-game-2](https://github.com/Quantum-Game/quantum-game-2) の旧版です。
+
+本体のMITライセンスと原著者のクレジットは維持します。百科事典・画像・フォント等には別の条件があります。
+[ライセンス調査と公開前の確認事項](docs/license-review.md) および
+[第三者素材の表記](THIRD_PARTY_NOTICES.md) を参照してください。素材の確認は未完了です。
+公開時は日本語版の運営主体を研究室として明示し、原著者や支援機関がこの版を公認したと誤解される表記を避けます。
+
+サブモジュールも取得する場合:
+
+```bash
+git clone --recurse-submodules https://github.com/mitarailab/quantum-game-2.git
+cd quantum-game-2
+git switch japanese
+```
+
+以下は上流の説明・クレジットです。
+
 A puzzle game with photons, superposition and quantum measurement, right in your browser. With true quantum mechanics underneath!
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/Quantum-Game/quantum-game-2)
