@@ -32,10 +32,7 @@
         PCのブラウザでの操作を推奨します。日本語版の開発：Mitarai Lab。
       </p>
     </div>
-    <div class="hello" layout="column u10">
-      <HomepageAuthors />
-      <HomepageHistory />
-    </div>
+    <HomepageCredits />
     <svg viewBox="0 0 64 64" width="200" height="200">
       <AppCell :piece="piece" class="rock" />
     </svg>
@@ -44,9 +41,8 @@
 
 <script lang="ts">
 import AppButton from '@/components/AppButton.vue'
-import HomepageAuthors from '@/components/HomePage/HomepageAuthors.vue'
+import HomepageCredits from '@/components/HomePage/HomepageCredits.vue'
 import HomepageInteractive from '@/components/HomePage/HomepageInteractive.vue'
-import HomepageHistory from '@/components/HomePage/HomepageHistory.vue'
 import AppCell from '@/components/Board/AppCell.vue'
 import { Elem, defaultPiece } from '@/engine/model'
 import { defineComponent } from 'vue'
@@ -55,8 +51,7 @@ import { useI18n } from 'vue-i18n'
 export default defineComponent({
   components: {
     AppButton,
-    HomepageAuthors,
-    HomepageHistory,
+    HomepageCredits,
     HomepageInteractive,
     AppCell,
   },
