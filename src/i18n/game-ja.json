@@ -179,5 +179,10 @@
   "Change basis": "基底の変更",
   "Next Level": "次のステージ",
   "Previous Level": "前のステージ",
-  "The simulation repeats automatically. Click rotatable components to change their orientation and observe the light paths.": "シミュレーションは自動で繰り返し動きます。回転できる部品をクリックして、光の進み方の変化を確かめましょう。"
+  "The simulation repeats automatically. Click rotatable components to change their orientation and observe the light paths.": "シミュレーションは自動で繰り返し動きます。回転できる部品をクリックして、光の進み方の変化を確かめましょう。",
+  "Photon motion": "光子の動き",
+  "Shows the light paths and detection probabilities.": "光の経路と、検出器に届く確率を表示します。",
+  "Shows how the photon state changes as it travels.": "光子が進む途中の状態を表示します。",
+  "Repeats detections to check the completion conditions.": "検出を繰り返し、クリア条件を確かめます。",
+  "Run the detection experiment to confirm completion.": "条件達成：検出実験でクリアを確認できます。"
 }

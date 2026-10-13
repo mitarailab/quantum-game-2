@@ -32,27 +32,44 @@
     </span>
     <!-- FRAME INFO -->
     <span class="frameInfo" layout="column u2 center" flex>
-      <div layout="row u2">
+      <div class="mode-selector" layout="row u2">
         <button
+          class="mode-button"
+          type="button"
           :class="classes.laser"
           :aria-label="$gameText('Classical laser beam')"
           :title="$gameText('Classical laser beam')"
           @click="$emit('mode-laser')"
-        />
+        >
+          <span class="mode-label" aria-hidden="true">{{ $gameText('Classical laser beam') }}</span>
+        </button>
         <button
+          class="mode-button"
+          type="button"
           :class="classes.wave"
-          :aria-label="$gameText('Quantum simulation')"
-          :title="$gameText('Quantum simulation')"
+          :aria-label="$gameText('Photon motion')"
+          :title="$gameText('Photon motion')"
           @click="$emit('mode-wave')"
-        />
+        >
+          <span class="mode-label" aria-hidden="true">{{ $gameText('Photon motion') }}</span>
+        </button>
         <button
+          class="mode-button"
+          type="button"
           :class="{ ...classes.experiment, blink: !classes.experiment.active && promptExperiment }"
           :aria-label="$gameText('Running experiment')"
           :title="$gameText('Running experiment')"
           @click="$emit('mode-experiment')"
-        />
+        >
+          <span class="mode-label" aria-hidden="true">{{ $gameText('Running experiment') }}</span>
+        </button>
       </div>
       <span class="gameState">{{ displayStatus }}</span>
+      <span class="clear-hint" role="status">{{
+        promptExperiment && !classes.experiment.active
+          ? $gameText('Run the detection experiment to confirm completion.')
+          : ''
+      }}</span>
     </span>
     <!-- LEVEL CONTROLS -->
     <span class="view-mode">
@@ -131,11 +148,11 @@ export default defineComponent({
     const displayStatus = computed(() => {
       switch (props.visMode) {
         case SimulationVisMode.Laser:
-          return gameText('Classical laser beam')
+          return gameText('Shows the light paths and detection probabilities.')
         case SimulationVisMode.QuantumWave:
-          return gameText('Quantum simulation')
+          return gameText('Shows how the photon state changes as it travels.')
         case SimulationVisMode.Experiment:
-          return gameText('Running experiment')
+          return gameText('Repeats detections to check the completion conditions.')
       }
     })
 
@@ -258,6 +275,31 @@ label {
   }
 }
 
+.mode-selector {
+  padding-bottom: 22px;
+}
+.mode-button {
+  position: relative;
+  background-repeat: no-repeat;
+}
+.mode-label {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  color: white;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.clear-hint {
+  min-height: 1.5em;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #ffe39a;
+  text-align: center;
+}
+
 @keyframes button-blink {
   30% {
     background-color: mix($fuchsia, black);
@@ -279,8 +321,8 @@ label {
 }
 .gameState {
   font-size: 0.8rem;
-  padding-left: 10px;
-  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
 }
 
 input[type='file'] {
@@ -304,13 +346,19 @@ input[type='file'] {
   justify-content: space-between;
   align-items: center;
   @include media('<large') {
-    button {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    .view-mode button {
       display: none;
     }
     .frameInfo {
-      display: none;
       display: flex;
       flex-direction: column;
+      flex-basis: 100%;
+    }
+    .mode-selector button {
+      display: inline-block;
     }
   }
   .playback {
