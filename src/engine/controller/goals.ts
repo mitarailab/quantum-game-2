@@ -2,6 +2,9 @@ import { Elem, Level, Coord } from '@/engine/model'
 import { iFilterMap } from '@/itertools'
 import { computed, proxyRefs } from 'vue'
 
+// Ignore floating-point roundoff when a calculated probability equals its target.
+export const PROBABILITY_EPSILON = 1e-12
+
 export const enum GameOutcome {
   LevelNotLoaded,
   Victory,
@@ -35,7 +38,7 @@ export function goalsController(data: {
     if (absorptions == null) return 0
 
     return allGoals.value.every(
-      ({ coord, threshold }) => (absorptions.get(coord) ?? 0) >= threshold
+      ({ coord, threshold }) => (absorptions.get(coord) ?? 0) + PROBABILITY_EPSILON >= threshold
     )
   })
 
@@ -43,7 +46,7 @@ export function goalsController(data: {
     const absorptions = data.absorptions()
     const threshold = safetyThreshold.value
     if (absorptions == null) return 0
-    return mines.value.every((coord) => (absorptions.get(coord) ?? 0) <= threshold)
+    return mines.value.every((coord) => (absorptions.get(coord) ?? 0) <= threshold + PROBABILITY_EPSILON)
   })
   const gameOutcome = computed(() => {
     if (data.level() == null) {

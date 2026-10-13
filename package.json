@@ -1,6 +1,6 @@
 {
   "name": "quantum-game",
-  "version": "2.2.17",
+  "version": "2.2.18",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -13,7 +13,8 @@
     "update-entries": "ts-node src/utils/updateEntries",
     "test:learning": "node scripts/check-learning.cjs",
     "test:navigation": "node scripts/check-navigation.cjs",
-    "test:progress": "node scripts/check-progress.cjs"
+    "test:progress": "node scripts/check-progress.cjs",
+    "test:campaign": "node scripts/check-campaign.cjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",

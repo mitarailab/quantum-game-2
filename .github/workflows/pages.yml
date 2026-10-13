@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: '22'
       - run: npx --yes yarn@1.22.22 install --frozen-lockfile --non-interactive
-      - run: npm run test:learning && npm run test:navigation && npm run test:progress
+      - run: npm run test:learning && npm run test:navigation && npm run test:progress && npm run test:campaign
         env:
           VUE_APP_HASH_ROUTER: 'false'
       - run: npm run build -- --report-json
