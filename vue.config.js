@@ -24,7 +24,12 @@ process.env.VUE_APP_TWITTER = socialMediaDesc.twitter
 process.env.VUE_APP_AUTHORS = socialMediaDesc.authors
 
 module.exports = {
+  publicPath: process.env.VUE_APP_PUBLIC_PATH || '/',
+  productionSourceMap: false,
   chainWebpack: (config) => {
+    // This edition uses localStorage and does not ship legacy offline-app assets.
+    config.plugins.delete('pwa')
+    config.plugins.delete('workbox')
     // make sure babel-loader is not confused when using "yarn link"
     config.resolve.symlinks(false)
 

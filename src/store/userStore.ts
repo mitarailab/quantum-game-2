@@ -8,7 +8,10 @@ import {
 import router from '@/router'
 
 function importFirebase() {
-  return import(/* webpackChunkName: 'chunk-firebase' */ '@/config/firebase')
+  // Keep legacy action types, but do not bundle or connect the upstream backend.
+  return Promise.reject<typeof import('@/config/firebase')>(
+    new Error('この日本語版ではクラウドへの保存とログインは使用しません。')
+  )
 }
 
 interface UserState {

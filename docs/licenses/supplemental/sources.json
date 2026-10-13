@@ -1,0 +1,40 @@
+[
+  {
+    "file": "vue-3.0.0.txt",
+    "source": "https://raw.githubusercontent.com/vuejs/vue-next/v3.0.0/LICENSE",
+    "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+  },
+  {
+    "file": "feather-4.28.0.txt",
+    "source": "https://raw.githubusercontent.com/feathericons/feather/v4.28.0/LICENSE",
+    "sha256": "afcab584f9ecaf796069d8b3cd2a02e3135d89743a2cf17def2e7935dad91e5d"
+  },
+  {
+    "file": "quantum-game-original.txt",
+    "source": "https://raw.githubusercontent.com/stared/quantum-game/master/LICENSE.md",
+    "sha256": "53a013060b9af97a60ee223cbcf7f6655868f07ff12969e368bf0cd07ad7ba96"
+  },
+  {
+    "file": "OFL-1.1.txt",
+    "source": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/OFL-1.1.txt",
+    "sha256": "8eea8287e5876b539670cadb82e99f9a7afddec6f6730811be1daf25d2e9bcfd"
+  },
+  {
+    "file": "CC-BY-4.0.txt",
+    "source": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/CC-BY-4.0.txt",
+    "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+  },
+  {
+    "file": "bra-ket-vue-0.4.2.txt",
+    "source": "https://api.github.com/repos/Quantum-Flytrap/bra-ket-vue/git/blobs/ff4fb42df40b17ff77a44102d9c5cf19951b82ed",
+    "sha256": "5b58643f4cad284f2fd3c44fe1d9188261c06f036b7e14ea68cc41709354bf72",
+    "note": "npm 0.4.2 declares MIT; its tag omits a LICENSE. This is the upstream license text from the named blob."
+  },
+  {
+    "file": "quantum-tensors-0.4.13.txt",
+    "source": "https://registry.npmjs.org/quantum-tensors/0.4.13",
+    "authors_source": "https://github.com/Quantum-Game/quantum-tensors/blob/61978ea9cc0ee0c5aafa6811ea7a04e84b987e28/README.md",
+    "sha256": "41eada7248d7526631d4b34644d0208c5ca6f472c45fdffeff74af037cc91ea7",
+    "note": "MIT declaration and authors from published metadata/README; standard MIT terms reproduced because upstream version lacks a LICENSE."
+  }
+]

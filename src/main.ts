@@ -2,7 +2,6 @@
 import { createApp } from 'vue'
 import router from './router'
 import { store } from './store/store'
-import './registerServiceWorker'
 import { i18n } from './i18n'
 import { gameTranslationPlugin } from './i18n/game'
 import { flagsPlugin } from './flags'

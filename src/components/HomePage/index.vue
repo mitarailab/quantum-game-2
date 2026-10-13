@@ -1,7 +1,7 @@
 <template>
   <div class="home-page-wrapper" layout="column center">
     <div class="row-full">
-      <img src="@/assets/graphics/QG_logo.svg" alt="QuantumGame" />
+      <div class="game-title">Quantum Game 2 <span>日本語版</span></div>
     </div>
     <div layout="row wrap middle u5">
       <router-link to="/level/1">
@@ -18,7 +18,7 @@
     </div>
     <div class="gameVersion">
       <p>
-        日本語版 {{ version }}（開発中）／
+        日本語版 {{ version }}／
         <template v-if="commitHash">
           <a
             :href="`https://github.com/mitarailab/quantum-game-2/commit/${commitHash}`"
@@ -75,11 +75,6 @@ export default defineComponent({
   text-align: center;
   background: linear-gradient(#5c00d3, #f05, #5c00d3, #210235);
   width: 100%;
-  & a {
-    & img {
-      max-width: 250px;
-    }
-  }
 }
 .gameVersion {
   font-size: 0.8rem;
@@ -87,6 +82,16 @@ export default defineComponent({
   @include media('<large') {
     font-size: 1rem;
     width: 80%;
+  }
+}
+.game-title {
+  padding: 40px 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  span {
+    display: block;
+    margin-top: 12px;
+    font-size: 1.1rem;
   }
 }
 h1 {

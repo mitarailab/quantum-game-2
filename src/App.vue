@@ -1,12 +1,10 @@
 <template>
   <SvgGlobalDefs />
   <router-view />
-  <LoginStatus />
 </template>
 
 <script lang="ts">
 import SvgGlobalDefs from '@/components/SvgGlobalDefs.vue'
-import LoginStatus from '@/components/LoginPage/LoginStatus.vue'
 import { useSoundtrack } from '@/mixins/soundtrack'
 import { defineComponent } from 'vue'
 import { useWindowEvent } from '@/mixins/event'
@@ -15,7 +13,6 @@ import { PROGRESS_STORAGE_KEY } from '@/store/localProgress'
 
 export default defineComponent({
   components: {
-    LoginStatus,
     SvgGlobalDefs,
   },
   setup() {

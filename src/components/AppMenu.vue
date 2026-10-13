@@ -7,8 +7,6 @@
           $gameText('CONTINUE')
         }}</router-link>
         <router-link to="/levels">{{ $gameText('LEVELS') }}</router-link>
-        <router-link v-if="isLoggedIn" to="/myaccount">{{ $gameText('MY ACCOUNT') }}</router-link>
-        <router-link v-else to="/login">{{ $gameText('LOG IN') }}</router-link>
         <router-link to="/lab">{{ $gameText('VIRTUAL LAB') }}</router-link>
         <router-link to="/levels">{{ $gameText('LEVELS') }}</router-link>
         <router-link to="/info">{{ $gameText('ENCYCLOPEDIA') }}</router-link>
@@ -27,9 +25,7 @@ import { defineComponent, watchEffect } from 'vue'
 import { useRouter } from 'vue-router'
 
 export default defineComponent(() => {
-  const user = storeNamespace('user')
   const game = storeNamespace('game')
-  const isLoggedIn = user.useGetter('isLoggedIn')
   const currentLevel = game.useState('currentLevelID')
   const appMenuOpened = game.useState('appMenuOpened')
   const SET_MENU_OPENED = game.useMutation('SET_MENU_OPENED')
@@ -60,7 +56,6 @@ export default defineComponent(() => {
   })
 
   return {
-    isLoggedIn,
     currentLevel,
     campaignLink,
     appMenuOpened,

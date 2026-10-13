@@ -95,15 +95,6 @@
       >
       </label>
       <input id="fileUpload" type="file" @change="$emit('upload', $event)" />
-
-      <button
-        type="button"
-        :class="classes.save"
-        :aria-label="$gameText('Save level to the cloud (you need to be logged in).')"
-        :title="$gameText('Save level to the cloud (you need to be logged in).')"
-        @click="$emit('save')"
-        @mouseenter="showSaveHint()"
-      />
     </span>
   </div>
 </template>
@@ -115,7 +106,6 @@ import { storeNamespace } from '@/store'
 import { computed, defineComponent, PropType, proxyRefs } from 'vue'
 import { PlayheadController, SimulationVisMode } from '@/engine/controller'
 
-const user = storeNamespace('user')
 const options = storeNamespace('options')
 
 export default defineComponent({
@@ -137,7 +127,6 @@ export default defineComponent({
   setup(props, { emit }) {
     const toggleSound = options.useAction('TOGGLE_SOUND')
     const soundActive = options.useGetter('soundActive')
-    const isLoggedIn = user.useGetter('isLoggedIn')
 
     const displayStatus = computed(() => {
       switch (props.visMode) {
@@ -177,7 +166,6 @@ export default defineComponent({
       ),
       download: computed(() => iconClass('download', !props.playhead.isPlaying)),
       upload: computed(() => iconClass('upload', !props.playhead.isPlaying)),
-      save: computed(() => iconClass('save', isLoggedIn.value && !props.playhead.isPlaying)),
       wave: computed(() => iconClass('wave', props.visMode === SimulationVisMode.QuantumWave)),
       laser: computed(() => iconClass('laser', props.visMode === SimulationVisMode.Laser)),
       experiment: computed(() =>
@@ -192,19 +180,11 @@ export default defineComponent({
       })
     }
 
-    function showSaveHint() {
-      emit('hover', {
-        kind: 'ui',
-        text: gameText('Save level to the cloud (you need to be logged in).'),
-      })
-    }
-
     return {
       classes,
       displayStatus,
       toggleSound,
       showSoundHint,
-      showSaveHint,
     }
   },
 })

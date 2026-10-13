@@ -1,0 +1,49 @@
+name: Publish Japanese Quantum Game 2
+
+on:
+  push:
+    branches: [japanese]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      VUE_APP_PUBLIC_PATH: /quantum-game-2/
+      VUE_APP_HASH_ROUTER: 'true'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: japanese
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npx --yes yarn@1.22.22 install --frozen-lockfile --non-interactive
+      - run: npm run test:learning && npm run test:navigation && npm run test:progress
+        env:
+          VUE_APP_HASH_ROUTER: 'false'
+      - run: npm run build -- --report-json
+      - run: node scripts/distribution-notices.cjs dist
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

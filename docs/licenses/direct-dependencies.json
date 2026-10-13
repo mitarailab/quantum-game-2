@@ -807,6 +807,39 @@
       "tarball": "https://registry.npmjs.org/sass/-/sass-1.32.13.tgz",
       "integrity": "sha512-dEgI9nShraqP7cXQH+lEXVf73WOPCse0QlFzSD8k+1TcOxCMwVXfQlr0jtoluZysQOyJGnfr21dLvYKDJq8HkA==",
       "status": "metadata-only"
+    },
+    {
+      "name": "d3-color",
+      "requested": "2.0.0",
+      "version": "2.0.0",
+      "group": "dependencies",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "url": "https://github.com/d3/d3-color.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/d3-color/2.0.0",
+      "tarball": "https://registry.npmjs.org/d3-color/-/d3-color-2.0.0.tgz",
+      "integrity": "sha512-SPXi0TSKPD4g9tw0NMZFnR95XVgUZiBH+uUTqQuDu1OsE2zomHU7ho0FISciaPvosimixwHFl3WHLGabv6dDgQ==",
+      "status": "metadata-only",
+      "checked_on": "2026-10-13"
+    },
+    {
+      "name": "@types/d3-color",
+      "requested": "^2.0.0",
+      "version": "2.0.6",
+      "group": "devDependencies",
+      "license": "MIT",
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/d3-color"
+      },
+      "source": "https://registry.npmjs.org/%40types%2Fd3-color/2.0.6",
+      "tarball": "https://registry.npmjs.org/@types/d3-color/-/d3-color-2.0.6.tgz",
+      "integrity": "sha512-tbaFGDmJWHqnenvk3QGSvD3RVwr631BjKRD7Sc7VLRgrdX5mk5hTyoeBL6rXZaeoXzmZwIl1D2HPogEdt1rHBg==",
+      "status": "metadata-only",
+      "checked_on": "2026-10-13"
     }
   ]
 }

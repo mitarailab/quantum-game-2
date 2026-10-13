@@ -10,7 +10,6 @@
         >Ready to play the Quantum Game with Photons 2?</a
       >
     </p>
-    <img src="@/assets/graphics/CQT_NUS_Logo_mono.svg" alt="CQT logo" class="CQTlogo" />
     <p>
       You can play the old version (2014-2016)
       <a href="http://play.quantumgame.io/" target="_blank">here</a>.
@@ -30,10 +29,5 @@ a:hover {
   border-top: 2px solid white;
   padding-top: 30px;
   line-height: 1.5;
-}
-.CQTlogo {
-  width: 40%;
-  padding-bottom: 10px;
-  min-width: 250px;
 }
 </style>

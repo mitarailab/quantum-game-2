@@ -1,3 +1,13 @@
+## 日本語版の公開と開発
+
+- 公開先: https://mitarailab.github.io/quantum-game-2/
+- 開発ブランチ: `japanese`
+- ゲーム、部品の解説と実験盤面、ブラウザ内のクリア情報保存を提供します。ログイン・クラウド保存は使いません。
+- GitHub Pagesではハッシュ付きURL（例: `/quantum-game-2/#/level/1`）を使います。大学ドメイン切り替え後も同じパスで配信できます。
+- `japanese`へのpushで、テスト・ビルド・配布ライセンス検査の後にGitHub Actionsが公開します。
+- 手動ビルド: `VUE_APP_PUBLIC_PATH=/quantum-game-2/ VUE_APP_HASH_ROUTER=true npm run build -- --report-json`、続いて `node scripts/distribution-notices.cjs dist`。
+- 未解決の旧素材の扱いと、配布通知の出典は [ライセンス調査](docs/license-review.md) と [第三者通知](THIRD_PARTY_NOTICES.md) を参照してください。
+
 # Quantum Game 2
 
 ## Mitarai Lab 日本語版の開発
@@ -48,7 +58,7 @@ Quantum Game is currently being developed by dr [Piotr Migdał](https://p.migdal
 
 This version of the game was funded by the [Center for Quantum Technologies of the National University of Singapore](https://www.quantumlah.org/) and now being developed by the **Quantum Flytrap**.
 
-![Quantum Game 2 logo](public/img/qg2_logo.png)
+原作のロゴ画像は、この日本語版の公開ファイルには含めていません。
 
 The current version uses subcomponents:
 

@@ -1,9 +1,12 @@
-import { levelIdFromString, LevelKind } from '@/assets/data/levels'
+import { campaignLevel, levelIdFromString, LevelKind } from '@/assets/data/levels'
 import { isEqual } from 'lodash'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history:
+    process.env.VUE_APP_HASH_ROUTER === 'true'
+      ? createWebHashHistory(process.env.BASE_URL)
+      : createWebHistory(process.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -22,6 +25,12 @@ const router = createRouter({
       path: '/level/:id',
       name: 'level',
       component: () => import('@/components/GamePage/index.vue'),
+      beforeEnter: (route) => {
+        const id = levelIdFromString(route.params.id as string)
+        if (id.kind !== LevelKind.Campaign || campaignLevel(id.index) == null) {
+          return { name: 'levels' }
+        }
+      },
       props: (route) => {
         return {
           levelId: levelIdFromString(route.params.id as string),
@@ -51,22 +60,22 @@ const router = createRouter({
     {
       path: '/register',
       name: 'register',
-      component: () => import('@/components/RegisterPage/index.vue'),
+      redirect: '/levels',
     },
     {
       path: '/login',
       name: 'login',
-      component: () => import('@/components/LoginPage/index.vue'),
+      redirect: '/levels',
     },
     {
       path: '/myaccount',
       name: 'myaccount',
-      component: () => import('@/components/MyAccountPage/index.vue'),
+      redirect: '/levels',
     },
     {
       path: '/savedlevels',
       name: 'savedlevels',
-      component: () => import('@/components/SavedLevelsPage/index.vue'),
+      redirect: '/levels',
     },
     {
       path: '/options',
