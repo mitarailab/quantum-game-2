@@ -15,15 +15,15 @@ const STORAGE_KEY = 'options'
 const defaultOptions: IOptionsModule = {
   gameSpeedInterval: 200,
   volume: 1,
-  mute: false,
+  mute: true,
 }
 
 function getInitialOptions(): IOptionsModule {
   const options: IOptionsModule = { ...defaultOptions }
 
-  const persistedString = localStorage.getItem(STORAGE_KEY)
-  if (persistedString == null) return options
   try {
+    const persistedString = localStorage.getItem(STORAGE_KEY)
+    if (persistedString == null) return options
     const parsed: unknown = JSON.parse(persistedString)
     // validate data types on stored json object
     if (!isObject(parsed)) return options

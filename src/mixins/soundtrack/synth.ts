@@ -22,7 +22,7 @@ export class Synth {
   transpose = this.transpositions[0]
 
   limiter = new Tone.Limiter({ threshold: -2 })
-  gain = new Tone.Gain()
+  gain = new Tone.Gain(0)
   hip1 = new Tone.Filter(1000, 'highpass')
   feedbackDelay = new Tone.FeedbackDelay('8n', 0.7)
   chorus = new Tone.Chorus(4, 2.5, 0.5)
